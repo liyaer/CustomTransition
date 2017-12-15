@@ -7,14 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D233A2541FE0BE8A004C8C7D /* UnInteractivePresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D233A2431FE0BE8A004C8C7D /* UnInteractivePresentVC.m */; };
+		D233A2551FE0BE8A004C8C7D /* UnInteractivePresentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D233A2441FE0BE8A004C8C7D /* UnInteractivePresentVC.xib */; };
+		D233A2561FE0BE8A004C8C7D /* UnInteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D233A2461FE0BE8A004C8C7D /* UnInteractiveDismissVC.m */; };
+		D233A2571FE0BE8A004C8C7D /* UnInteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D233A2471FE0BE8A004C8C7D /* UnInteractiveDismissVC.xib */; };
+		D233A2591FE0BE8A004C8C7D /* UnInteractivePushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D233A24C1FE0BE8A004C8C7D /* UnInteractivePushVC.m */; };
+		D233A25A1FE0BE8A004C8C7D /* UnInteractivePushVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D233A24D1FE0BE8A004C8C7D /* UnInteractivePushVC.xib */; };
+		D233A25B1FE0BE8A004C8C7D /* UnInteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D233A24F1FE0BE8A004C8C7D /* UnInteractivePopVC.m */; };
+		D233A25C1FE0BE8A004C8C7D /* UnInteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D233A2521FE0BE8A004C8C7D /* UnInteractiveTabBarVC.m */; };
 		D25E76731FDE6BC200D23D38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76721FDE6BC200D23D38 /* main.m */; };
 		D25E76761FDE6BC200D23D38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76751FDE6BC200D23D38 /* AppDelegate.m */; };
-		D25E76791FDE6BC200D23D38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76781FDE6BC200D23D38 /* ViewController.m */; };
 		D25E767C1FDE6BC200D23D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25E767A1FDE6BC200D23D38 /* Main.storyboard */; };
 		D25E767E1FDE6BC200D23D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25E767D1FDE6BC200D23D38 /* Assets.xcassets */; };
 		D25E76811FDE6BC200D23D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25E767F1FDE6BC200D23D38 /* LaunchScreen.storyboard */; };
 		D25E768C1FDE6BC200D23D38 /* UIViewControllerTransitioningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E768B1FDE6BC200D23D38 /* UIViewControllerTransitioningTests.m */; };
 		D25E76971FDE6BC200D23D38 /* UIViewControllerTransitioningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76961FDE6BC200D23D38 /* UIViewControllerTransitioningUITests.m */; };
+		D25E76C71FDFD2E000D23D38 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76C61FDFD2E000D23D38 /* BaseVC.m */; };
+		D2FE6DA51FE253EA001DF378 /* InteractivePushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE6DA31FE253EA001DF378 /* InteractivePushVC.m */; };
+		D2FE6DA61FE253EA001DF378 /* InteractivePushVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FE6DA41FE253EA001DF378 /* InteractivePushVC.xib */; };
+		D2FE6DA91FE2543D001DF378 /* InteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE6DA81FE2543D001DF378 /* InteractivePopVC.m */; };
+		D2FE6DAB1FE272A5001DF378 /* 资料参考图.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FE6DAA1FE272A5001DF378 /* 资料参考图.png */; };
+		D2FE6DAE1FE276E2001DF378 /* InteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE6DAD1FE276E2001DF378 /* InteractiveTabBarVC.m */; };
+		D2FED01E1FE395A3004F6DB3 /* VCTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FED01D1FE395A3004F6DB3 /* VCTransitioningDelegate.m */; };
+		D2FED0221FE39D2B004F6DB3 /* TabBarVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FED0211FE39D2B004F6DB3 /* TabBarVCDelegate.m */; };
+		D2FF8ECC1FE0F540003AFADA /* NavControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8ECB1FE0F540003AFADA /* NavControllerDelegate.m */; };
+		D2FF8ED01FE10199003AFADA /* InteractivePresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8ECE1FE10199003AFADA /* InteractivePresentVC.m */; };
+		D2FF8ED31FE101D6003AFADA /* InteractivePresentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF8ED21FE101D6003AFADA /* InteractivePresentVC.xib */; };
+		D2FF8ED61FE1025C003AFADA /* InteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8ED51FE1025C003AFADA /* InteractiveDismissVC.m */; };
+		D2FF8ED81FE10277003AFADA /* InteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF8ED71FE10277003AFADA /* InteractiveDismissVC.xib */; };
+		D2FF8EDB1FE11991003AFADA /* GestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8EDA1FE11991003AFADA /* GestureInteractiveTransition.m */; };
+		D2FF8EDE1FE127AA003AFADA /* UnInteractiveCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8EDD1FE127AA003AFADA /* UnInteractiveCustomTransition.m */; };
+		D2FF8EE11FE128A1003AFADA /* InteractiveCustonTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8EE01FE128A1003AFADA /* InteractiveCustonTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +58,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D233A2421FE0BE8A004C8C7D /* UnInteractivePresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePresentVC.h; sourceTree = "<group>"; };
+		D233A2431FE0BE8A004C8C7D /* UnInteractivePresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePresentVC.m; sourceTree = "<group>"; };
+		D233A2441FE0BE8A004C8C7D /* UnInteractivePresentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractivePresentVC.xib; sourceTree = "<group>"; };
+		D233A2451FE0BE8A004C8C7D /* UnInteractiveDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveDismissVC.h; sourceTree = "<group>"; };
+		D233A2461FE0BE8A004C8C7D /* UnInteractiveDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveDismissVC.m; sourceTree = "<group>"; };
+		D233A2471FE0BE8A004C8C7D /* UnInteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractiveDismissVC.xib; sourceTree = "<group>"; };
+		D233A24B1FE0BE8A004C8C7D /* UnInteractivePushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePushVC.h; sourceTree = "<group>"; };
+		D233A24C1FE0BE8A004C8C7D /* UnInteractivePushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePushVC.m; sourceTree = "<group>"; };
+		D233A24D1FE0BE8A004C8C7D /* UnInteractivePushVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractivePushVC.xib; sourceTree = "<group>"; };
+		D233A24E1FE0BE8A004C8C7D /* UnInteractivePopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePopVC.h; sourceTree = "<group>"; };
+		D233A24F1FE0BE8A004C8C7D /* UnInteractivePopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePopVC.m; sourceTree = "<group>"; };
+		D233A2511FE0BE8A004C8C7D /* UnInteractiveTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveTabBarVC.h; sourceTree = "<group>"; };
+		D233A2521FE0BE8A004C8C7D /* UnInteractiveTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveTabBarVC.m; sourceTree = "<group>"; };
 		D25E766E1FDE6BC200D23D38 /* UIViewControllerTransitioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewControllerTransitioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25E76721FDE6BC200D23D38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D25E76741FDE6BC200D23D38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D25E76751FDE6BC200D23D38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D25E76771FDE6BC200D23D38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D25E76781FDE6BC200D23D38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D25E767B1FDE6BC200D23D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D25E767D1FDE6BC200D23D38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D25E76801FDE6BC200D23D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +85,34 @@
 		D25E76921FDE6BC200D23D38 /* UIViewControllerTransitioningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewControllerTransitioningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25E76961FDE6BC200D23D38 /* UIViewControllerTransitioningUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewControllerTransitioningUITests.m; sourceTree = "<group>"; };
 		D25E76981FDE6BC200D23D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25E76C51FDFD2E000D23D38 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		D25E76C61FDFD2E000D23D38 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		D2FE6DA21FE253EA001DF378 /* InteractivePushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePushVC.h; sourceTree = "<group>"; };
+		D2FE6DA31FE253EA001DF378 /* InteractivePushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePushVC.m; sourceTree = "<group>"; };
+		D2FE6DA41FE253EA001DF378 /* InteractivePushVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractivePushVC.xib; sourceTree = "<group>"; };
+		D2FE6DA71FE2543D001DF378 /* InteractivePopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePopVC.h; sourceTree = "<group>"; };
+		D2FE6DA81FE2543D001DF378 /* InteractivePopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePopVC.m; sourceTree = "<group>"; };
+		D2FE6DAA1FE272A5001DF378 /* 资料参考图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资料参考图.png"; sourceTree = "<group>"; };
+		D2FE6DAC1FE276E2001DF378 /* InteractiveTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTabBarVC.h; sourceTree = "<group>"; };
+		D2FE6DAD1FE276E2001DF378 /* InteractiveTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTabBarVC.m; sourceTree = "<group>"; };
+		D2FED01C1FE395A3004F6DB3 /* VCTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTransitioningDelegate.h; sourceTree = "<group>"; };
+		D2FED01D1FE395A3004F6DB3 /* VCTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTransitioningDelegate.m; sourceTree = "<group>"; };
+		D2FED0201FE39D2B004F6DB3 /* TabBarVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVCDelegate.h; sourceTree = "<group>"; };
+		D2FED0211FE39D2B004F6DB3 /* TabBarVCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVCDelegate.m; sourceTree = "<group>"; };
+		D2FF8ECA1FE0F540003AFADA /* NavControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavControllerDelegate.h; sourceTree = "<group>"; };
+		D2FF8ECB1FE0F540003AFADA /* NavControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavControllerDelegate.m; sourceTree = "<group>"; };
+		D2FF8ECD1FE10199003AFADA /* InteractivePresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePresentVC.h; sourceTree = "<group>"; };
+		D2FF8ECE1FE10199003AFADA /* InteractivePresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePresentVC.m; sourceTree = "<group>"; };
+		D2FF8ED21FE101D6003AFADA /* InteractivePresentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractivePresentVC.xib; sourceTree = "<group>"; };
+		D2FF8ED41FE1025C003AFADA /* InteractiveDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveDismissVC.h; sourceTree = "<group>"; };
+		D2FF8ED51FE1025C003AFADA /* InteractiveDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveDismissVC.m; sourceTree = "<group>"; };
+		D2FF8ED71FE10277003AFADA /* InteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractiveDismissVC.xib; sourceTree = "<group>"; };
+		D2FF8ED91FE11991003AFADA /* GestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GestureInteractiveTransition.h; path = "Present&Dismiss/GestureInteractiveTransition.h"; sourceTree = "<group>"; };
+		D2FF8EDA1FE11991003AFADA /* GestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GestureInteractiveTransition.m; path = "Present&Dismiss/GestureInteractiveTransition.m"; sourceTree = "<group>"; };
+		D2FF8EDC1FE127AA003AFADA /* UnInteractiveCustomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveCustomTransition.h; sourceTree = "<group>"; };
+		D2FF8EDD1FE127AA003AFADA /* UnInteractiveCustomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveCustomTransition.m; sourceTree = "<group>"; };
+		D2FF8EDF1FE128A1003AFADA /* InteractiveCustonTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveCustonTransition.h; sourceTree = "<group>"; };
+		D2FF8EE01FE128A1003AFADA /* InteractiveCustonTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveCustonTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +140,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D233A23E1FE0BE8A004C8C7D /* 非交互式转场 */ = {
+			isa = PBXGroup;
+			children = (
+				D233A2411FE0BE8A004C8C7D /* Present&Dismiss */,
+				D233A2481FE0BE8A004C8C7D /* Push&Pop */,
+				D233A2501FE0BE8A004C8C7D /* UITabBarController */,
+			);
+			path = "非交互式转场";
+			sourceTree = "<group>";
+		};
+		D233A2411FE0BE8A004C8C7D /* Present&Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				D233A2421FE0BE8A004C8C7D /* UnInteractivePresentVC.h */,
+				D233A2431FE0BE8A004C8C7D /* UnInteractivePresentVC.m */,
+				D233A2441FE0BE8A004C8C7D /* UnInteractivePresentVC.xib */,
+				D233A2451FE0BE8A004C8C7D /* UnInteractiveDismissVC.h */,
+				D233A2461FE0BE8A004C8C7D /* UnInteractiveDismissVC.m */,
+				D233A2471FE0BE8A004C8C7D /* UnInteractiveDismissVC.xib */,
+				D2FED01B1FE39512004F6DB3 /* 解耦：分离代理对象写法 */,
+			);
+			path = "Present&Dismiss";
+			sourceTree = "<group>";
+		};
+		D233A2481FE0BE8A004C8C7D /* Push&Pop */ = {
+			isa = PBXGroup;
+			children = (
+				D233A24B1FE0BE8A004C8C7D /* UnInteractivePushVC.h */,
+				D233A24C1FE0BE8A004C8C7D /* UnInteractivePushVC.m */,
+				D233A24D1FE0BE8A004C8C7D /* UnInteractivePushVC.xib */,
+				D233A24E1FE0BE8A004C8C7D /* UnInteractivePopVC.h */,
+				D233A24F1FE0BE8A004C8C7D /* UnInteractivePopVC.m */,
+				D2FF8EC91FE0F540003AFADA /* 解耦：分离代理对象写法 */,
+			);
+			path = "Push&Pop";
+			sourceTree = "<group>";
+		};
+		D233A2501FE0BE8A004C8C7D /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D233A2511FE0BE8A004C8C7D /* UnInteractiveTabBarVC.h */,
+				D233A2521FE0BE8A004C8C7D /* UnInteractiveTabBarVC.m */,
+				D2FED01F1FE39D0D004F6DB3 /* 解耦：分离代理对象写法 */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
 		D25E76651FDE6BC200D23D38 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +210,16 @@
 		D25E76701FDE6BC200D23D38 /* UIViewControllerTransitioning */ = {
 			isa = PBXGroup;
 			children = (
-				D25E76741FDE6BC200D23D38 /* AppDelegate.h */,
-				D25E76751FDE6BC200D23D38 /* AppDelegate.m */,
-				D25E76771FDE6BC200D23D38 /* ViewController.h */,
-				D25E76781FDE6BC200D23D38 /* ViewController.m */,
+				D2FE6DAA1FE272A5001DF378 /* 资料参考图.png */,
 				D25E767A1FDE6BC200D23D38 /* Main.storyboard */,
-				D25E767D1FDE6BC200D23D38 /* Assets.xcassets */,
-				D25E767F1FDE6BC200D23D38 /* LaunchScreen.storyboard */,
-				D25E76821FDE6BC200D23D38 /* Info.plist */,
+				D25E76C51FDFD2E000D23D38 /* BaseVC.h */,
+				D25E76C61FDFD2E000D23D38 /* BaseVC.m */,
+				D2FF8EDC1FE127AA003AFADA /* UnInteractiveCustomTransition.h */,
+				D2FF8EDD1FE127AA003AFADA /* UnInteractiveCustomTransition.m */,
+				D2FF8EDF1FE128A1003AFADA /* InteractiveCustonTransition.h */,
+				D2FF8EE01FE128A1003AFADA /* InteractiveCustonTransition.m */,
+				D233A23E1FE0BE8A004C8C7D /* 非交互式转场 */,
+				D25E76D51FDFD5B100D23D38 /* 交互式转场 */,
 				D25E76711FDE6BC200D23D38 /* Supporting Files */,
 			);
 			path = UIViewControllerTransitioning;
@@ -117,6 +228,11 @@
 		D25E76711FDE6BC200D23D38 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D25E76741FDE6BC200D23D38 /* AppDelegate.h */,
+				D25E76751FDE6BC200D23D38 /* AppDelegate.m */,
+				D25E767D1FDE6BC200D23D38 /* Assets.xcassets */,
+				D25E767F1FDE6BC200D23D38 /* LaunchScreen.storyboard */,
+				D25E76821FDE6BC200D23D38 /* Info.plist */,
 				D25E76721FDE6BC200D23D38 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +254,80 @@
 				D25E76981FDE6BC200D23D38 /* Info.plist */,
 			);
 			path = UIViewControllerTransitioningUITests;
+			sourceTree = "<group>";
+		};
+		D25E76D51FDFD5B100D23D38 /* 交互式转场 */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF8ED91FE11991003AFADA /* GestureInteractiveTransition.h */,
+				D2FF8EDA1FE11991003AFADA /* GestureInteractiveTransition.m */,
+				D25E76D61FDFD5B100D23D38 /* Present&Dismiss */,
+				D25E76D71FDFD5B100D23D38 /* Push&Pop */,
+				D25E76D81FDFD5B100D23D38 /* UITabBarController */,
+			);
+			path = "交互式转场";
+			sourceTree = "<group>";
+		};
+		D25E76D61FDFD5B100D23D38 /* Present&Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF8ECD1FE10199003AFADA /* InteractivePresentVC.h */,
+				D2FF8ECE1FE10199003AFADA /* InteractivePresentVC.m */,
+				D2FF8ED21FE101D6003AFADA /* InteractivePresentVC.xib */,
+				D2FF8ED41FE1025C003AFADA /* InteractiveDismissVC.h */,
+				D2FF8ED51FE1025C003AFADA /* InteractiveDismissVC.m */,
+				D2FF8ED71FE10277003AFADA /* InteractiveDismissVC.xib */,
+			);
+			path = "Present&Dismiss";
+			sourceTree = "<group>";
+		};
+		D25E76D71FDFD5B100D23D38 /* Push&Pop */ = {
+			isa = PBXGroup;
+			children = (
+				D2FE6DA21FE253EA001DF378 /* InteractivePushVC.h */,
+				D2FE6DA31FE253EA001DF378 /* InteractivePushVC.m */,
+				D2FE6DA41FE253EA001DF378 /* InteractivePushVC.xib */,
+				D2FE6DA71FE2543D001DF378 /* InteractivePopVC.h */,
+				D2FE6DA81FE2543D001DF378 /* InteractivePopVC.m */,
+			);
+			path = "Push&Pop";
+			sourceTree = "<group>";
+		};
+		D25E76D81FDFD5B100D23D38 /* UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				D2FE6DAC1FE276E2001DF378 /* InteractiveTabBarVC.h */,
+				D2FE6DAD1FE276E2001DF378 /* InteractiveTabBarVC.m */,
+			);
+			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		D2FED01B1FE39512004F6DB3 /* 解耦：分离代理对象写法 */ = {
+			isa = PBXGroup;
+			children = (
+				D2FED01C1FE395A3004F6DB3 /* VCTransitioningDelegate.h */,
+				D2FED01D1FE395A3004F6DB3 /* VCTransitioningDelegate.m */,
+			);
+			path = "解耦：分离代理对象写法";
+			sourceTree = "<group>";
+		};
+		D2FED01F1FE39D0D004F6DB3 /* 解耦：分离代理对象写法 */ = {
+			isa = PBXGroup;
+			children = (
+				D2FED0201FE39D2B004F6DB3 /* TabBarVCDelegate.h */,
+				D2FED0211FE39D2B004F6DB3 /* TabBarVCDelegate.m */,
+			);
+			path = "解耦：分离代理对象写法";
+			sourceTree = "<group>";
+		};
+		D2FF8EC91FE0F540003AFADA /* 解耦：分离代理对象写法 */ = {
+			isa = PBXGroup;
+			children = (
+				D2FF8ECA1FE0F540003AFADA /* NavControllerDelegate.h */,
+				D2FF8ECB1FE0F540003AFADA /* NavControllerDelegate.m */,
+			);
+			name = "解耦：分离代理对象写法";
+			path = "分离代理对象写法(其他两种方式也可以这样写)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +436,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D233A2571FE0BE8A004C8C7D /* UnInteractiveDismissVC.xib in Resources */,
+				D2FF8ED31FE101D6003AFADA /* InteractivePresentVC.xib in Resources */,
+				D2FE6DAB1FE272A5001DF378 /* 资料参考图.png in Resources */,
 				D25E76811FDE6BC200D23D38 /* LaunchScreen.storyboard in Resources */,
+				D233A2551FE0BE8A004C8C7D /* UnInteractivePresentVC.xib in Resources */,
+				D2FF8ED81FE10277003AFADA /* InteractiveDismissVC.xib in Resources */,
+				D2FE6DA61FE253EA001DF378 /* InteractivePushVC.xib in Resources */,
+				D233A25A1FE0BE8A004C8C7D /* UnInteractivePushVC.xib in Resources */,
 				D25E767E1FDE6BC200D23D38 /* Assets.xcassets in Resources */,
 				D25E767C1FDE6BC200D23D38 /* Main.storyboard in Resources */,
 			);
@@ -273,9 +470,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D25E76791FDE6BC200D23D38 /* ViewController.m in Sources */,
+				D2FE6DAE1FE276E2001DF378 /* InteractiveTabBarVC.m in Sources */,
+				D233A2561FE0BE8A004C8C7D /* UnInteractiveDismissVC.m in Sources */,
+				D2FF8ED01FE10199003AFADA /* InteractivePresentVC.m in Sources */,
+				D2FED0221FE39D2B004F6DB3 /* TabBarVCDelegate.m in Sources */,
+				D233A25B1FE0BE8A004C8C7D /* UnInteractivePopVC.m in Sources */,
+				D2FE6DA91FE2543D001DF378 /* InteractivePopVC.m in Sources */,
+				D25E76C71FDFD2E000D23D38 /* BaseVC.m in Sources */,
+				D2FF8ED61FE1025C003AFADA /* InteractiveDismissVC.m in Sources */,
+				D2FF8EE11FE128A1003AFADA /* InteractiveCustonTransition.m in Sources */,
 				D25E76761FDE6BC200D23D38 /* AppDelegate.m in Sources */,
+				D2FF8ECC1FE0F540003AFADA /* NavControllerDelegate.m in Sources */,
 				D25E76731FDE6BC200D23D38 /* main.m in Sources */,
+				D2FF8EDE1FE127AA003AFADA /* UnInteractiveCustomTransition.m in Sources */,
+				D233A2541FE0BE8A004C8C7D /* UnInteractivePresentVC.m in Sources */,
+				D233A25C1FE0BE8A004C8C7D /* UnInteractiveTabBarVC.m in Sources */,
+				D233A2591FE0BE8A004C8C7D /* UnInteractivePushVC.m in Sources */,
+				D2FE6DA51FE253EA001DF378 /* InteractivePushVC.m in Sources */,
+				D2FF8EDB1FE11991003AFADA /* GestureInteractiveTransition.m in Sources */,
+				D2FED01E1FE395A3004F6DB3 /* VCTransitioningDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +720,7 @@
 				D25E769D1FDE6BC200D23D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25E769E1FDE6BC200D23D38 /* Build configuration list for PBXNativeTarget "UIViewControllerTransitioningTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +729,7 @@
 				D25E76A01FDE6BC200D23D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D25E76A11FDE6BC200D23D38 /* Build configuration list for PBXNativeTarget "UIViewControllerTransitioningUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +738,7 @@
 				D25E76A31FDE6BC200D23D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
