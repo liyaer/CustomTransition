@@ -10,9 +10,11 @@
 
 @interface GestureInteractiveTransition ()
 
-@property (nonatomic, assign) BOOL shouldComplete;
-@property (nonatomic, strong) UIViewController *fromVC;
-@property (nonatomic, strong) UIViewController *toVC;
+@property (nonatomic,assign) GesDirection diretion;
+@property (nonatomic,assign) TransitionType type;
+@property (nonatomic, strong) UIViewController *vc;
+
+@property (nonatomic, assign) BOOL shouldComplete;//规定本次交互是否成功完成
 
 @end
 
@@ -21,11 +23,18 @@
 
 @implementation GestureInteractiveTransition
 
--(void)setGestureForToVC:(UIViewController *)toVC
+-(instancetype)initWithTransitionType:(TransitionType)type GesDirection:(GesDirection)direction addGesVC:(UIViewController *)vc
 {
-    self.toVC = toVC;//两个内存地址一样哦
-    UIPanGestureRecognizer *toGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
-    [toVC.view addGestureRecognizer:toGesture];
+    if (self = [super init])
+    {
+        _diretion = direction;
+        _type = type;
+        
+        _vc = vc;//两个内存地址一样哦
+        UIPanGestureRecognizer *toGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+        [vc.view addGestureRecognizer:toGesture];
+    }
+    return self;
 }
 
 - (void)handleGesture:(UIPanGestureRecognizer *)gestureRecognizer
@@ -36,9 +45,8 @@
         case UIGestureRecognizerStateBegan:
         {
             self.interacting = YES;
-//            [self.toVC dismissViewControllerAnimated:YES completion:nil];
-//            [self.toVC.navigationController popViewControllerAnimated:YES];
-            self.toVC.tabBarController.selectedIndex = 0;
+            
+            [self transitionOperate];
         }
             break;
         case UIGestureRecognizerStateChanged:
@@ -56,6 +64,7 @@
         case UIGestureRecognizerStateCancelled:
         {
             self.interacting = NO;
+            
             if (!self.shouldComplete || gestureRecognizer.state == UIGestureRecognizerStateCancelled)
             {
                 //系统方法：报告交互取消，返回切换前的状态
@@ -77,6 +86,52 @@
 -(CGFloat)completionSpeed
 {
     return 1 - self.percentComplete;
+}
+
+-(void)transitionOperate
+{
+    switch (_type)
+    {
+        case gPresent:
+        {
+            if (self.gesPresentConfig)
+            {
+                self.gesPresentConfig();
+            }
+        }
+            break;
+            
+        case gDismiss:
+        {
+            [self.vc dismissViewControllerAnimated:YES completion:nil];
+        }
+            break;
+            
+        case gPush:
+        {
+            if (self.gesPushConfig)
+            {
+                self.gesPushConfig();
+            }
+        }
+            break;
+            
+        case gPop:
+        {
+            [self.vc.navigationController popViewControllerAnimated:YES];
+        }
+            break;
+            
+        case gTabBar:
+        {
+            UITabBarController *tabBar = (UITabBarController *)self.vc;
+            tabBar.selectedIndex = 0;
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

@@ -7,14 +7,14 @@
 //
 
 #import "UnInteractiveDismissVC.h"
-#import "UnInteractiveCustomTransition.h"
+#import "CustomTransitionAnimation.h"
 
 
 
 
 @interface UnInteractiveDismissVC ()<UIViewControllerTransitioningDelegate>
 
-@property (nonatomic,strong) UnInteractiveCustomTransition *customTransition;
+@property (nonatomic,strong) CustomTransitionAnimation *customTransition;
 
 @end
 
@@ -35,7 +35,7 @@
     self.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     
     
-    self.customTransition = [[UnInteractiveCustomTransition alloc] init];
+    self.customTransition = [[CustomTransitionAnimation alloc] init];
 }
 
 - (IBAction)backAction:(id)sender

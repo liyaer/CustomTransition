@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "UnInteractiveCustomTransition.h"
+#import "CustomTransitionAnimation.h"
 
 @interface TabBarVCDelegate : NSObject<UITabBarControllerDelegate>
-
-@property (nonatomic,strong) UnInteractiveCustomTransition *customTransition;
 
 @end

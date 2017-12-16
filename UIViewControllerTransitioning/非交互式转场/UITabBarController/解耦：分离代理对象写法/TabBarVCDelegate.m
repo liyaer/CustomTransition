@@ -9,12 +9,14 @@
 #import "TabBarVCDelegate.h"
 
 @implementation TabBarVCDelegate
-
+{
+    CustomTransitionAnimation *_customTransition;
+}
 -(instancetype)init
 {
     if (self = [super init])
     {
-        self.customTransition = [[UnInteractiveCustomTransition alloc] init];
+        _customTransition = [[CustomTransitionAnimation alloc] init];
     }
     return self;
 }
@@ -23,8 +25,8 @@
 
 -(id<UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC
 {
-    self.customTransition.type = ktabBar;
-    return self.customTransition;
+    _customTransition.type = ktabBar;
+    return _customTransition;
 }
 
 

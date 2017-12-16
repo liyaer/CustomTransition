@@ -10,12 +10,14 @@
 #import "UnInteractivePushVC.h"
 
 @implementation NavControllerDelegate
-
+{
+    CustomTransitionAnimation *_customTransition;
+}
 -(instancetype)init
 {
     if (self = [super init])
     {
-        self.customTransition = [[UnInteractiveCustomTransition alloc] init];
+        _customTransition = [[CustomTransitionAnimation alloc] init];
     }
     return self;
 }
@@ -33,13 +35,13 @@
     
     if ([fromVC isKindOfClass:[UnInteractivePushVC class]])
     {
-        self.customTransition.type = kPush;
+        _customTransition.type = kPush;
     }
     else
     {
-        self.customTransition.type = kPop;
+        _customTransition.type = kPop;
     }
-    return self.customTransition;
+    return _customTransition;
 }
 
 @end

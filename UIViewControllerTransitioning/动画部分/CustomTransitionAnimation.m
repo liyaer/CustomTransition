@@ -6,9 +6,9 @@
 //  Copyright © 2017年 杜文亮. All rights reserved.
 //
 
-#import "UnInteractiveCustomTransition.h"
+#import "CustomTransitionAnimation.h"
 
-@implementation UnInteractiveCustomTransition
+@implementation CustomTransitionAnimation
 
 //动画时间
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
@@ -24,21 +24,36 @@
         case kPresent:
             [self presentTransitionAnimation:transitionContext];
             break;
+            
         case kDismiss:
             [self dismissTransitionAnimation:transitionContext];
             break;
+            
         case kPush:
             [self pushTransitionAnimation:transitionContext];
             break;
+            
         case kPop:
             [self popTransitionAnimation:transitionContext];
             break;
+            
         case ktabBar:
             [self tabBarTransitionAnimation:transitionContext];
             break;
             
         default:
             break;
+    }
+    
+    if ([transitionContext transitionWasCancelled])
+    {
+        [toVC.view removeFromSuperview];
+        NSLog(@"cancel");
+    }
+    else
+    {
+        [fromVC.view removeFromSuperview];
+        NSLog(@"UNUNUNcancel");
     }
 }
 
@@ -185,7 +200,7 @@
     [[transitionContext containerView] bringSubviewToFront:fromVC.view];
     
     //这是一段测试代码，真实使用请移除
-    [self test:transitionContext fromVC:fromVC toVC:toVC];
+//    [self test:transitionContext fromVC:fromVC toVC:toVC];
     
     //动画开始前的一些准备
     CGRect frame = [transitionContext finalFrameForViewController:toVC];
@@ -224,6 +239,5 @@
     frame = [transitionContext finalFrameForViewController:fromVC];
     NSLog(@"%f",frame.size.width);
 }
-
 
 @end

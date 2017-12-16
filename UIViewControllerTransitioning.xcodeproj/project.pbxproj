@@ -28,6 +28,7 @@
 		D2FE6DA91FE2543D001DF378 /* InteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE6DA81FE2543D001DF378 /* InteractivePopVC.m */; };
 		D2FE6DAB1FE272A5001DF378 /* 资料参考图.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FE6DAA1FE272A5001DF378 /* 资料参考图.png */; };
 		D2FE6DAE1FE276E2001DF378 /* InteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE6DAD1FE276E2001DF378 /* InteractiveTabBarVC.m */; };
+		D2FE6FDC1FE504F500D7B1FC /* CustomTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE6FDB1FE504F500D7B1FC /* CustomTransitionAnimation.m */; };
 		D2FED01E1FE395A3004F6DB3 /* VCTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FED01D1FE395A3004F6DB3 /* VCTransitioningDelegate.m */; };
 		D2FED0221FE39D2B004F6DB3 /* TabBarVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FED0211FE39D2B004F6DB3 /* TabBarVCDelegate.m */; };
 		D2FF8ECC1FE0F540003AFADA /* NavControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8ECB1FE0F540003AFADA /* NavControllerDelegate.m */; };
@@ -36,8 +37,6 @@
 		D2FF8ED61FE1025C003AFADA /* InteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8ED51FE1025C003AFADA /* InteractiveDismissVC.m */; };
 		D2FF8ED81FE10277003AFADA /* InteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FF8ED71FE10277003AFADA /* InteractiveDismissVC.xib */; };
 		D2FF8EDB1FE11991003AFADA /* GestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8EDA1FE11991003AFADA /* GestureInteractiveTransition.m */; };
-		D2FF8EDE1FE127AA003AFADA /* UnInteractiveCustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8EDD1FE127AA003AFADA /* UnInteractiveCustomTransition.m */; };
-		D2FF8EE11FE128A1003AFADA /* InteractiveCustonTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FF8EE01FE128A1003AFADA /* InteractiveCustonTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +94,8 @@
 		D2FE6DAA1FE272A5001DF378 /* 资料参考图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资料参考图.png"; sourceTree = "<group>"; };
 		D2FE6DAC1FE276E2001DF378 /* InteractiveTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTabBarVC.h; sourceTree = "<group>"; };
 		D2FE6DAD1FE276E2001DF378 /* InteractiveTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTabBarVC.m; sourceTree = "<group>"; };
+		D2FE6FDA1FE504F500D7B1FC /* CustomTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionAnimation.h; sourceTree = "<group>"; };
+		D2FE6FDB1FE504F500D7B1FC /* CustomTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionAnimation.m; sourceTree = "<group>"; };
 		D2FED01C1FE395A3004F6DB3 /* VCTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTransitioningDelegate.h; sourceTree = "<group>"; };
 		D2FED01D1FE395A3004F6DB3 /* VCTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTransitioningDelegate.m; sourceTree = "<group>"; };
 		D2FED0201FE39D2B004F6DB3 /* TabBarVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVCDelegate.h; sourceTree = "<group>"; };
@@ -109,10 +110,6 @@
 		D2FF8ED71FE10277003AFADA /* InteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractiveDismissVC.xib; sourceTree = "<group>"; };
 		D2FF8ED91FE11991003AFADA /* GestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GestureInteractiveTransition.h; path = "Present&Dismiss/GestureInteractiveTransition.h"; sourceTree = "<group>"; };
 		D2FF8EDA1FE11991003AFADA /* GestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GestureInteractiveTransition.m; path = "Present&Dismiss/GestureInteractiveTransition.m"; sourceTree = "<group>"; };
-		D2FF8EDC1FE127AA003AFADA /* UnInteractiveCustomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveCustomTransition.h; sourceTree = "<group>"; };
-		D2FF8EDD1FE127AA003AFADA /* UnInteractiveCustomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveCustomTransition.m; sourceTree = "<group>"; };
-		D2FF8EDF1FE128A1003AFADA /* InteractiveCustonTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveCustonTransition.h; sourceTree = "<group>"; };
-		D2FF8EE01FE128A1003AFADA /* InteractiveCustonTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveCustonTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,10 +211,7 @@
 				D25E767A1FDE6BC200D23D38 /* Main.storyboard */,
 				D25E76C51FDFD2E000D23D38 /* BaseVC.h */,
 				D25E76C61FDFD2E000D23D38 /* BaseVC.m */,
-				D2FF8EDC1FE127AA003AFADA /* UnInteractiveCustomTransition.h */,
-				D2FF8EDD1FE127AA003AFADA /* UnInteractiveCustomTransition.m */,
-				D2FF8EDF1FE128A1003AFADA /* InteractiveCustonTransition.h */,
-				D2FF8EE01FE128A1003AFADA /* InteractiveCustonTransition.m */,
+				D2FE6FD91FE504F500D7B1FC /* 动画部分 */,
 				D233A23E1FE0BE8A004C8C7D /* 非交互式转场 */,
 				D25E76D51FDFD5B100D23D38 /* 交互式转场 */,
 				D25E76711FDE6BC200D23D38 /* Supporting Files */,
@@ -300,6 +294,15 @@
 				D2FE6DAD1FE276E2001DF378 /* InteractiveTabBarVC.m */,
 			);
 			path = UITabBarController;
+			sourceTree = "<group>";
+		};
+		D2FE6FD91FE504F500D7B1FC /* 动画部分 */ = {
+			isa = PBXGroup;
+			children = (
+				D2FE6FDA1FE504F500D7B1FC /* CustomTransitionAnimation.h */,
+				D2FE6FDB1FE504F500D7B1FC /* CustomTransitionAnimation.m */,
+			);
+			path = "动画部分";
 			sourceTree = "<group>";
 		};
 		D2FED01B1FE39512004F6DB3 /* 解耦：分离代理对象写法 */ = {
@@ -478,15 +481,14 @@
 				D2FE6DA91FE2543D001DF378 /* InteractivePopVC.m in Sources */,
 				D25E76C71FDFD2E000D23D38 /* BaseVC.m in Sources */,
 				D2FF8ED61FE1025C003AFADA /* InteractiveDismissVC.m in Sources */,
-				D2FF8EE11FE128A1003AFADA /* InteractiveCustonTransition.m in Sources */,
 				D25E76761FDE6BC200D23D38 /* AppDelegate.m in Sources */,
 				D2FF8ECC1FE0F540003AFADA /* NavControllerDelegate.m in Sources */,
 				D25E76731FDE6BC200D23D38 /* main.m in Sources */,
-				D2FF8EDE1FE127AA003AFADA /* UnInteractiveCustomTransition.m in Sources */,
 				D233A2541FE0BE8A004C8C7D /* UnInteractivePresentVC.m in Sources */,
 				D233A25C1FE0BE8A004C8C7D /* UnInteractiveTabBarVC.m in Sources */,
 				D233A2591FE0BE8A004C8C7D /* UnInteractivePushVC.m in Sources */,
 				D2FE6DA51FE253EA001DF378 /* InteractivePushVC.m in Sources */,
+				D2FE6FDC1FE504F500D7B1FC /* CustomTransitionAnimation.m in Sources */,
 				D2FF8EDB1FE11991003AFADA /* GestureInteractiveTransition.m in Sources */,
 				D2FED01E1FE395A3004F6DB3 /* VCTransitioningDelegate.m in Sources */,
 			);

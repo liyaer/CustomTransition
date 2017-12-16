@@ -9,12 +9,14 @@
 #import "VCTransitioningDelegate.h"
 
 @implementation VCTransitioningDelegate
-
+{
+   CustomTransitionAnimation *_customTransition;
+}
 -(instancetype)init
 {
     if (self = [super init])
     {
-        self.customTransition = [[UnInteractiveCustomTransition alloc] init];
+        _customTransition = [[CustomTransitionAnimation alloc] init];
     }
     return self;
 }
@@ -24,15 +26,15 @@
 //present时的动画效果
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-    self.customTransition.type = kPresent;
-    return self.customTransition;
+    _customTransition.type = kPresent;
+    return _customTransition;
 }
 
 //dismiss时的动画效果
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-    self.customTransition.type = kDismiss;
-    return self.customTransition;
+    _customTransition.type = kDismiss;
+    return _customTransition;
 }
 
 @end

@@ -8,14 +8,18 @@
 
 #import "InteractivePresentVC.h"
 #import "InteractiveDismissVC.h"
+#import "CustomTransitionAnimation.h"
 #import "GestureInteractiveTransition.h"//相比非交互式，增加
-#import "InteractiveCustonTransition.h"//相比非交互式，修改
+
+
 
 
 @interface InteractivePresentVC ()<UIViewControllerTransitioningDelegate>
 
-@property (nonatomic,strong) InteractiveCustonTransition *customAnimation;
-@property (nonatomic,strong) GestureInteractiveTransition *interactiveTransition;//相比非交互式，增加
+@property (nonatomic,strong) CustomTransitionAnimation *customAnimation;
+
+@property (nonatomic,strong) GestureInteractiveTransition *IT_present;//相比非交互式，增加
+@property (nonatomic,strong) GestureInteractiveTransition *IT_dismiss;//相比非交互式，增加
 
 @end
 
@@ -28,15 +32,22 @@
 {
     [super viewDidLoad];
     
-    self.customAnimation = [InteractiveCustonTransition new];
-    self.interactiveTransition = [GestureInteractiveTransition new];//相比非交互式，增加
+    self.customAnimation = [CustomTransitionAnimation new];
+    
+    //相比非交互式，增加
+    self.IT_present = [[GestureInteractiveTransition alloc] initWithTransitionType:gPresent GesDirection:kDown addGesVC:self];    __weak typeof(self) weakSelf = self;
+    self.IT_present.gesPresentConfig = ^
+    {
+        [weakSelf presentAction:nil];
+    };
 }
 
 - (IBAction)presentAction:(id)sender
 {
     InteractiveDismissVC *vc = [[InteractiveDismissVC alloc] init];
     vc.transitioningDelegate = self;
-    [self.interactiveTransition setGestureForToVC:vc];//相比非交互式，增加
+    //相比非交互式，增加
+    self.IT_dismiss = [[GestureInteractiveTransition alloc] initWithTransitionType:gDismiss GesDirection:kDown addGesVC:vc];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -48,27 +59,27 @@
 //present动画效果
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-    self.customAnimation.custom = present;
+    self.customAnimation.type = kPresent;
     return self.customAnimation;
 }
 
 //dismiss动画效果
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-    self.customAnimation.custom = dismiss;
+    self.customAnimation.type = kDismiss;
     return self.customAnimation;
 }
 
 //present交互动画效果   ----------//相比非交互式，增加
 - (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator
 {
-    return self.interactiveTransition.interacting ? self.interactiveTransition : nil;
+    return self.IT_present.interacting ? self.IT_present : nil;
 }
 
 //dismiss交互动画效果   ----------//相比非交互式，增加
 -(id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator
 {
-    return self.interactiveTransition.interacting ? self.interactiveTransition : nil;
+    return self.IT_dismiss.interacting ? self.IT_dismiss : nil;
 }
 
 
