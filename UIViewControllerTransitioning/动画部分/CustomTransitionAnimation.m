@@ -44,17 +44,6 @@
         default:
             break;
     }
-    
-    if ([transitionContext transitionWasCancelled])
-    {
-        [toVC.view removeFromSuperview];
-        NSLog(@"cancel");
-    }
-    else
-    {
-        [fromVC.view removeFromSuperview];
-        NSLog(@"UNUNUNcancel");
-    }
 }
 
 -(void)presentTransitionAnimation:(id)transitionContext
@@ -70,7 +59,6 @@
      系统会自动添加当前正在显示的fromVC.view,因此我们只需要添加toVC.view即可，是否将fromVC.view移到最前面是根据动画需要设置的
      */
     [[transitionContext containerView] addSubview:toVC.view];
-    [[transitionContext containerView] bringSubviewToFront:fromVC.view];
     
     
     //动画开始前的一些准备
@@ -101,7 +89,6 @@
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     [[transitionContext containerView] addSubview:toVC.view];
-    [[transitionContext containerView] bringSubviewToFront:fromVC.view];
     
     
     //动画开始前的一些准备
@@ -192,33 +179,83 @@
      }];
 }
 
+//-(void)tabBarTransitionAnimation:(id)transitionContext
+//{
+//    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+//    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+//    [[transitionContext containerView] addSubview:toVC.view];
+////    [[transitionContext containerView] bringSubviewToFront:fromVC.view];
+//    
+//    //这是一段测试代码，真实使用请移除
+////    [self test:transitionContext fromVC:fromVC toVC:toVC];
+//    
+//    //动画开始前的一些准备
+//    CGRect frame = [transitionContext finalFrameForViewController:toVC];
+//    toVC.view.frame = CGRectOffset(frame, frame.size.width, 0);
+//    
+//    //开始动画
+//    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^
+//     {
+//         fromVC.view.frame = CGRectOffset(frame, -frame.size.width, 0);
+//         toVC.view.frame = frame;
+//     }
+//    completion:^(BOOL finished)
+//     {
+//         //还原动画前的状态
+//         fromVC.view.frame = frame;
+//         
+//         //向这个context报告切换是否完成
+//         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+//         NSLog(@"setCompleteTransition %@",[[transitionContext containerView] subviews]);
+//     }];
+//}
+
+#warning 使用截图做动画确实可以解决抖动问题，但是第一次切换VC是无法截图而产生黑屏，因为VC还未初始化，等初始化之后，就一切正常了
 -(void)tabBarTransitionAnimation:(id)transitionContext
 {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     [[transitionContext containerView] addSubview:toVC.view];
     [[transitionContext containerView] bringSubviewToFront:fromVC.view];
-    
-    //这是一段测试代码，真实使用请移除
-//    [self test:transitionContext fromVC:fromVC toVC:toVC];
+
     
     //动画开始前的一些准备
+    fromVC.view.hidden = YES;
+    toVC.view.hidden = YES;
+    
     CGRect frame = [transitionContext finalFrameForViewController:toVC];
-    toVC.view.frame = CGRectOffset(frame, frame.size.width, 0);
+    
+    UIView *fromViewSnap = [fromVC.view snapshotViewAfterScreenUpdates:NO];
+    fromViewSnap.frame = frame;
+    [[transitionContext containerView] addSubview:fromViewSnap];
+    
+    UIView *toViewSnap = [toVC.view snapshotViewAfterScreenUpdates:NO];
+    toViewSnap.frame = CGRectOffset(frame, frame.size.width, 0);
+    [[transitionContext containerView] addSubview:toViewSnap];
     
     //开始动画
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^
      {
-         fromVC.view.frame = CGRectOffset(frame, -frame.size.width, 0);
-         toVC.view.frame = frame;
+         fromViewSnap.frame = CGRectOffset(frame, -frame.size.width, 0);
+         toViewSnap.frame = frame;
      }
     completion:^(BOOL finished)
      {
-         //还原动画前的状态
-         fromVC.view.frame = frame;
+//         if ([transitionContext transitionWasCancelled])
+//         {
+//             NSLog(@"cancel");
+//         }
+//         else
+//         {
+//             NSLog(@"UNUNUNcancel");
+//         }
+         fromVC.view.hidden = NO;
+         toVC.view.hidden = NO;
+         [fromViewSnap removeFromSuperview];
+         [toViewSnap removeFromSuperview];
          
-         //非交互式转场直接写成YES也行，因为不存在NO的情况
-         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];//向这个context报告切换是否完成
+         //向这个context报告切换是否完成
+         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
          NSLog(@"setCompleteTransition %@",[[transitionContext containerView] subviews]);
      }];
 }

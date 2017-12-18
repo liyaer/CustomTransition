@@ -69,11 +69,13 @@
             {
                 //系统方法：报告交互取消，返回切换前的状态
                 [self cancelInteractiveTransition];
+                NSLog(@"手势失效");
             }
             else
             {
                 //系统方法：报告交互完成，更新到切换后的状态
                 [self finishInteractiveTransition];
+                NSLog(@"手势成功");
             }
         }
             break;
@@ -133,5 +135,6 @@
             break;
     }
 }
+
 
 @end
