@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D200FEC31FE7A75B0024C73B /* GestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FE981FE7A75B0024C73B /* GestureInteractiveTransition.m */; };
 		D200FEC41FE7A75B0024C73B /* InteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FE9A1FE7A75B0024C73B /* InteractiveDismissVC.m */; };
 		D200FEC51FE7A75B0024C73B /* InteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FE9B1FE7A75B0024C73B /* InteractiveDismissVC.xib */; };
 		D200FEC61FE7A75B0024C73B /* InteractivePresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FE9D1FE7A75B0024C73B /* InteractivePresentVC.m */; };
@@ -28,6 +27,7 @@
 		D200FED51FE7A75B0024C73B /* UnInteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEBF1FE7A75B0024C73B /* UnInteractiveTabBarVC.m */; };
 		D200FED61FE7A75B0024C73B /* TabBarVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEC21FE7A75B0024C73B /* TabBarVCDelegate.m */; };
 		D200FED81FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png in Resources */ = {isa = PBXBuildFile; fileRef = D200FED71FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png */; };
+		D200FEDC1FE89FAD0024C73B /* GestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEDB1FE89FAD0024C73B /* GestureInteractiveTransition.m */; };
 		D25E76731FDE6BC200D23D38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76721FDE6BC200D23D38 /* main.m */; };
 		D25E76761FDE6BC200D23D38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76751FDE6BC200D23D38 /* AppDelegate.m */; };
 		D25E767C1FDE6BC200D23D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25E767A1FDE6BC200D23D38 /* Main.storyboard */; };
@@ -58,8 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D200FE971FE7A75B0024C73B /* GestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureInteractiveTransition.h; sourceTree = "<group>"; };
-		D200FE981FE7A75B0024C73B /* GestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureInteractiveTransition.m; sourceTree = "<group>"; };
 		D200FE991FE7A75B0024C73B /* InteractiveDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveDismissVC.h; sourceTree = "<group>"; };
 		D200FE9A1FE7A75B0024C73B /* InteractiveDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveDismissVC.m; sourceTree = "<group>"; };
 		D200FE9B1FE7A75B0024C73B /* InteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractiveDismissVC.xib; sourceTree = "<group>"; };
@@ -93,6 +91,8 @@
 		D200FEC11FE7A75B0024C73B /* TabBarVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVCDelegate.h; sourceTree = "<group>"; };
 		D200FEC21FE7A75B0024C73B /* TabBarVCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVCDelegate.m; sourceTree = "<group>"; };
 		D200FED71FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置UIModalPresentationCustom的情况.png"; sourceTree = "<group>"; };
+		D200FEDA1FE89FAD0024C73B /* GestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureInteractiveTransition.h; sourceTree = "<group>"; };
+		D200FEDB1FE89FAD0024C73B /* GestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureInteractiveTransition.m; sourceTree = "<group>"; };
 		D25E766E1FDE6BC200D23D38 /* UIViewControllerTransitioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewControllerTransitioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25E76721FDE6BC200D23D38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D25E76741FDE6BC200D23D38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,8 +152,6 @@
 		D200FE961FE7A75B0024C73B /* 交互式 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FE971FE7A75B0024C73B /* GestureInteractiveTransition.h */,
-				D200FE981FE7A75B0024C73B /* GestureInteractiveTransition.m */,
 				D200FE9C1FE7A75B0024C73B /* InteractivePresentVC.h */,
 				D200FE9D1FE7A75B0024C73B /* InteractivePresentVC.m */,
 				D200FE9E1FE7A75B0024C73B /* InteractivePresentVC.xib */,
@@ -267,6 +265,15 @@
 			path = "解耦：分离代理对象写法";
 			sourceTree = "<group>";
 		};
+		D200FED91FE89FAD0024C73B /* 手势部分 */ = {
+			isa = PBXGroup;
+			children = (
+				D200FEDA1FE89FAD0024C73B /* GestureInteractiveTransition.h */,
+				D200FEDB1FE89FAD0024C73B /* GestureInteractiveTransition.m */,
+			);
+			path = "手势部分";
+			sourceTree = "<group>";
+		};
 		D25E76651FDE6BC200D23D38 = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +301,7 @@
 				D25E767A1FDE6BC200D23D38 /* Main.storyboard */,
 				D25E76C51FDFD2E000D23D38 /* BaseVC.h */,
 				D25E76C61FDFD2E000D23D38 /* BaseVC.m */,
+				D200FED91FE89FAD0024C73B /* 手势部分 */,
 				D2FE6FD91FE504F500D7B1FC /* 动画部分 */,
 				D200FE951FE7A75B0024C73B /* Present&Dismiss */,
 				D200FEA91FE7A75B0024C73B /* Push&Pop */,
@@ -492,13 +500,13 @@
 				D25E76761FDE6BC200D23D38 /* AppDelegate.m in Sources */,
 				D200FED01FE7A75B0024C73B /* UnInteractivePopVC.m in Sources */,
 				D25E76731FDE6BC200D23D38 /* main.m in Sources */,
-				D200FEC31FE7A75B0024C73B /* GestureInteractiveTransition.m in Sources */,
 				D200FED11FE7A75B0024C73B /* UnInteractivePushVC.m in Sources */,
 				D200FED31FE7A75B0024C73B /* NavControllerDelegate.m in Sources */,
 				D200FEC41FE7A75B0024C73B /* InteractiveDismissVC.m in Sources */,
 				D200FEC61FE7A75B0024C73B /* InteractivePresentVC.m in Sources */,
 				D200FED61FE7A75B0024C73B /* TabBarVCDelegate.m in Sources */,
 				D2FE6FDC1FE504F500D7B1FC /* CustomTransitionAnimation.m in Sources */,
+				D200FEDC1FE89FAD0024C73B /* GestureInteractiveTransition.m in Sources */,
 				D200FECA1FE7A75B0024C73B /* UnInteractivePresentVC.m in Sources */,
 				D200FECC1FE7A75B0024C73B /* VCTransitioningDelegate.m in Sources */,
 				D200FED51FE7A75B0024C73B /* UnInteractiveTabBarVC.m in Sources */,

@@ -26,6 +26,17 @@
 
 @implementation InteractiveTabBarVC
 
+-(void)addBGLayerForVC:(UIViewController *)vc index:(int)i
+{
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = vc.view.bounds;
+    //设置渐变梯度（水平，垂直，对角）
+    [gradientLayer setStartPoint:CGPointMake(0.0, 0.0)];
+    [gradientLayer setEndPoint:CGPointMake(1.0, 0.0)];
+    gradientLayer.colors = @[(id)[[UIColor colorWithRed:(3-i)*50/255.0 green:i*30/255.0 blue:(i+1)*50/255.0 alpha:1.0] CGColor],(id)[UIColor brownColor].CGColor];
+    [vc.view.layer addSublayer:gradientLayer];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,7 +47,7 @@
         UIViewController *vc = [[UIViewController alloc] init];
         vc.title = [NSString stringWithFormat:@"页面%d",i];
         vc.tabBarItem.title = [NSString stringWithFormat:@"页面%d",i];
-        vc.view.backgroundColor = [UIColor colorWithRed:(3-i)*50/255.0 green:i*30/255.0 blue:(i+1)*50/255.0 alpha:1.0];
+        [self addBGLayerForVC:vc index:i];
 #warning 无论VC是否在Nav中，都不影响自定义转场动画
         //        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
         [self addChildViewController:vc];

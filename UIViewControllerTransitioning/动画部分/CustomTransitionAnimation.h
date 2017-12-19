@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-//根据type设定不同动画类型，如果动画一样，可以不需要此枚举
+//根据type设定不同动画类型，如果往返动画一样，可以不需要此枚举
 typedef enum : NSUInteger
 {
     kPresent,
