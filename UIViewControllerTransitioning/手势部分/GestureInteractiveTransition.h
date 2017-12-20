@@ -22,7 +22,7 @@
 
 #import <UIKit/UIKit.h>
 
-//手势的方向
+//手势的方向（暂时没用）
 typedef NS_ENUM(NSUInteger, GesDirection)
 {
     kLeft,

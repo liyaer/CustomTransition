@@ -24,7 +24,7 @@
 
 @implementation UnInteractivePresentVC
 
-#warning 关于转场的这些设置写在DissmissVC或者PresentVC中都可以达到效果。这里在PresentVC中使用解耦方式，在DismissVC中使用一般方式，运行时请注释掉任意一个VC中的关于转场的设置，以用来证明都可以达到效果。（下面的几个例子不在演示一般方式，和这里完全类似，统一使用解耦的方式。但是如果业务逻辑复杂，难于分离，直接用一般方式也可以）
+#warning 关于转场的这些设置写在DissmissVC或者PresentVC中都可以达到效果。这里在PresentVC中使用解耦方式，在DismissVC中使用一般方式，运行时请注释掉任意一个VC中的关于转场的设置，以用来证明都可以达到效果。（下面的几个例子不在演示一般方式，和这里完全类似，统一使用解耦的方式。但是如果业务逻辑复杂，难于分离，直接用一般方式也可以，比如三种转场的交互式）
 
 - (void)viewDidLoad
 {

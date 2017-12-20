@@ -10,7 +10,7 @@
 
 @interface GestureInteractiveTransition ()
 
-@property (nonatomic,assign) GesDirection diretion;
+@property (nonatomic,assign) GesDirection diretion;//暂时没用
 @property (nonatomic,assign) TransitionType type;
 @property (nonatomic, strong) UIViewController *vc;
 
@@ -52,9 +52,10 @@
         case UIGestureRecognizerStateChanged:
         {
             CGFloat fraction = translation.y / 400.0;
-            //Limit it between 0 and 1
+            NSLog(@"=======%.2f",fraction);//向上是负值
             fraction = fminf(fmaxf(fraction, 0.0), 1.0);
             self.shouldComplete = (fraction > 0.5);
+            NSLog(@"-------%d",self.shouldComplete);
             
             //系统方法：根据用户手势更新交互进度
             [self updateInteractiveTransition:fraction];

@@ -8,6 +8,13 @@
 
 #import "CustomTransitionAnimation.h"
 
+/*
+ *   总结：
+        1，除了交互式tabBarVC,其他情况下都可以直接用view做动画，好处是系统帮助我们保证动画view的真实完整，但是动画完成需要恢复动画前的状态，以便于后续使用。
+        2，交互式tabBarVC使用fromVC的截图，toVC的view做动画，最后添加toVC的截图遮盖bug效果
+        3，使用截图做动画需要考虑截图时VC是否初始化完成，否则截图对象为nil,好处是动画玩无需恢复，直接移除即可
+ */
+
 @implementation CustomTransitionAnimation
 
 //动画时间
@@ -228,8 +235,9 @@
     NSLog(@"%f",frame.size.width);
 }
 
-#pragma mark - 使用截图进行动画(好处是？？？)
+#pragma mark - 使用截图进行动画（比View做动画代价小，动画完成不用恢复原状，直接移除截图）
 
+//fromVC用截图，toVC用view做动画
 -(void)presentTransitionAnimation3:(id)transitionContext
 {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
@@ -265,6 +273,7 @@
      }];
 }
 
+//fromVC用截图，toVC用view做动画
 -(void)dismissTransitionAnimation3:(id)transitionContext
 {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
@@ -300,6 +309,7 @@
      }];
 }
 
+//这里用了toVC的截图做动画，但是最好还是fromVC用截图，toVC用view做动画
 -(void)pushTransitionAnimation3:(id)transitionContext
 {
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
@@ -334,31 +344,35 @@
      }];
 }
 
+//fromVC用截图，toVC用view做动画
 -(void)popTransitionAnimation3:(id)transitionContext
 {
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     [[transitionContext containerView] addSubview:toVC.view];
-    //这里因为动画需要，我们就不能将fromVC.view置前，否则会看不到动画
-    //    [[transitionContext containerView] bringSubviewToFront:fromVC.view];
     
     
     //动画开始前的一些准备
+    toVC.view.hidden = YES;
+    
+    UIView *toViewSnap = [toVC.view snapshotViewAfterScreenUpdates:NO];
     CGRect frame = [transitionContext finalFrameForViewController:toVC];
+    toViewSnap.layer.anchorPoint = CGPointMake(0.0, 0.5);
+    toViewSnap.frame = frame;
+    toViewSnap.layer.transform = CATransform3DMakeRotation(-M_PI_2, 0, 1, 0);
     CATransform3D transform = CATransform3DIdentity;
-    toVC.view.layer.anchorPoint = CGPointMake(0.0, 0.5);
-    toVC.view.frame = frame;
-    toVC.view.layer.transform = CATransform3DMakeRotation(-M_PI_2, 0, 1, 0);
+    [[transitionContext containerView] addSubview:toViewSnap];
+    
     
     //开始动画
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^
      {
-         toVC.view.layer.transform = transform;
+         toViewSnap.layer.transform = transform;
      }
-                     completion:^(BOOL finished)
+    completion:^(BOOL finished)
      {
          //还原动画前的状态
-         toVC.view.layer.anchorPoint = CGPointMake(0.5, 0.5);
-         toVC.view.frame = frame;
+         toVC.view.hidden = NO;
+         [toViewSnap removeFromSuperview];
          
          
          //非交互式转场直接写成YES也行，因为不存在NO的情况
@@ -367,7 +381,7 @@
      }];
 }
 
-#warning 1，2，3中关于vc.view hidden部分代码写的初衷是因为使用截图做动画，那么vc.view在动画过程中就无关紧要了，隐藏掉便于查看测试效果，但是其实只要理清楚视图层级关系，根本无需隐藏。1中没注释是为了方便查看效果，如果注释掉，查看运行结果可能会误以为是满足要求的，实则不然，只是因为未隐藏vc.view的缘故，仔细观察的话，他的动画效果和我们设定的动画效果是不一样的，2，3直接不隐藏也无所谓。总之：解决方案就是3，至于是否隐藏主要看是否影响动画效果而定（上面四种写法也都是3的写法,只不过动画结束无需加截图遮盖，因为他们不会抖动）
+#warning 1，2，3中关于vc.view hidden部分代码写的初衷是因为使用截图做动画，那么vc.view在动画过程中就无关紧要了，隐藏掉便于查看测试效果，但是其实只要理清楚视图层级关系，根本无需隐藏。1中没注释是为了方便查看效果，如果注释掉，查看运行结果可能会误以为是满足要求的，实则不然，只是因为未隐藏vc.view的缘故，仔细观察的话，他的动画效果和我们设定的动画效果是不一样的，2，3直接不隐藏也无所谓。总之：解决方案就是3，至于是否隐藏主要看是否影响动画效果而定（上面四种写法也都是3的写法,只不过动画结束无需加截图遮盖，因为他们不会抖动,准确的说是2的写法）
 /*
     fromVC和toVC全部用截图做动画
     因为tabBarVC的原因，首次点击切换或者手势切换时，子VC还未初始化加载完成，所以截图是黑屏，子VC被加载一次后，动画完美展现。
