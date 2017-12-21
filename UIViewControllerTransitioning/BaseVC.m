@@ -7,12 +7,17 @@
 //
 
 #import "BaseVC.h"
+//自定义转场动画
 #import "UnInteractivePresentVC.h"
 #import "UnInteractivePushVC.h"
 #import "UnInteractiveTabBarVC.h"
 #import "InteractivePresentVC.h"
 #import "InteractivePushVC.h"
 #import "InteractiveTabBarVC.h"
+//系统自带转场动画
+#import "SystemPresentVC.h"
+#import "SystemPushVC.h"
+#import "SystemTabBarVC.h"
 
 @interface BaseVC ()
 
@@ -26,6 +31,7 @@
     // Do any additional setup after loading the view.
 }
 
+//自定义转场动画
 - (IBAction)go:(id)sender
 {
     UnInteractivePresentVC *vc = [[UnInteractivePresentVC alloc] init];
@@ -62,6 +68,22 @@
 {
     InteractiveTabBarVC *vc = [[InteractiveTabBarVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+//系统自带转场动画
+- (IBAction)ha:(id)sender
+{
+    [self presentViewController:[SystemPresentVC new] animated:YES completion:nil];
+}
+
+- (IBAction)haha:(id)sender
+{
+    [self.navigationController pushViewController:[SystemPushVC new] animated:YES];
+}
+
+- (IBAction)hahaha:(id)sender
+{
+    [self.navigationController pushViewController:[SystemTabBarVC new] animated:YES];
 }
 
 @end

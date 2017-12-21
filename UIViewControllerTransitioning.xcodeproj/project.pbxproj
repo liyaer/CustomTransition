@@ -7,27 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D200FEC41FE7A75B0024C73B /* InteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FE9A1FE7A75B0024C73B /* InteractiveDismissVC.m */; };
-		D200FEC51FE7A75B0024C73B /* InteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FE9B1FE7A75B0024C73B /* InteractiveDismissVC.xib */; };
-		D200FEC61FE7A75B0024C73B /* InteractivePresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FE9D1FE7A75B0024C73B /* InteractivePresentVC.m */; };
-		D200FEC71FE7A75B0024C73B /* InteractivePresentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FE9E1FE7A75B0024C73B /* InteractivePresentVC.xib */; };
-		D200FEC81FE7A75B0024C73B /* UnInteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEA11FE7A75B0024C73B /* UnInteractiveDismissVC.m */; };
-		D200FEC91FE7A75B0024C73B /* UnInteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEA21FE7A75B0024C73B /* UnInteractiveDismissVC.xib */; };
-		D200FECA1FE7A75B0024C73B /* UnInteractivePresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEA41FE7A75B0024C73B /* UnInteractivePresentVC.m */; };
-		D200FECB1FE7A75B0024C73B /* UnInteractivePresentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEA51FE7A75B0024C73B /* UnInteractivePresentVC.xib */; };
-		D200FECC1FE7A75B0024C73B /* VCTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEA81FE7A75B0024C73B /* VCTransitioningDelegate.m */; };
-		D200FECD1FE7A75B0024C73B /* InteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEAC1FE7A75B0024C73B /* InteractivePopVC.m */; };
-		D200FECE1FE7A75B0024C73B /* InteractivePushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEAE1FE7A75B0024C73B /* InteractivePushVC.m */; };
-		D200FECF1FE7A75B0024C73B /* InteractivePushVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEAF1FE7A75B0024C73B /* InteractivePushVC.xib */; };
-		D200FED01FE7A75B0024C73B /* UnInteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEB21FE7A75B0024C73B /* UnInteractivePopVC.m */; };
-		D200FED11FE7A75B0024C73B /* UnInteractivePushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEB41FE7A75B0024C73B /* UnInteractivePushVC.m */; };
-		D200FED21FE7A75B0024C73B /* UnInteractivePushVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEB51FE7A75B0024C73B /* UnInteractivePushVC.xib */; };
-		D200FED31FE7A75B0024C73B /* NavControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEB81FE7A75B0024C73B /* NavControllerDelegate.m */; };
-		D200FED41FE7A75B0024C73B /* InteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEBC1FE7A75B0024C73B /* InteractiveTabBarVC.m */; };
-		D200FED51FE7A75B0024C73B /* UnInteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEBF1FE7A75B0024C73B /* UnInteractiveTabBarVC.m */; };
-		D200FED61FE7A75B0024C73B /* TabBarVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEC21FE7A75B0024C73B /* TabBarVCDelegate.m */; };
-		D200FED81FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png in Resources */ = {isa = PBXBuildFile; fileRef = D200FED71FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png */; };
-		D200FEDC1FE89FAD0024C73B /* GestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEDB1FE89FAD0024C73B /* GestureInteractiveTransition.m */; };
+		D200FF241FEA59D20024C73B /* InteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEED1FEA59D20024C73B /* InteractiveDismissVC.m */; };
+		D200FF251FEA59D20024C73B /* InteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEEE1FEA59D20024C73B /* InteractiveDismissVC.xib */; };
+		D200FF261FEA59D20024C73B /* InteractivePresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEF01FEA59D20024C73B /* InteractivePresentVC.m */; };
+		D200FF271FEA59D20024C73B /* InteractivePresentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEF11FEA59D20024C73B /* InteractivePresentVC.xib */; };
+		D200FF281FEA59D20024C73B /* 设置UIModalPresentationCustom的情况.png in Resources */ = {isa = PBXBuildFile; fileRef = D200FEF21FEA59D20024C73B /* 设置UIModalPresentationCustom的情况.png */; };
+		D200FF291FEA59D20024C73B /* UnInteractiveDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEF51FEA59D20024C73B /* UnInteractiveDismissVC.m */; };
+		D200FF2A1FEA59D20024C73B /* UnInteractiveDismissVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEF61FEA59D20024C73B /* UnInteractiveDismissVC.xib */; };
+		D200FF2B1FEA59D20024C73B /* UnInteractivePresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEF81FEA59D20024C73B /* UnInteractivePresentVC.m */; };
+		D200FF2C1FEA59D20024C73B /* UnInteractivePresentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FEF91FEA59D20024C73B /* UnInteractivePresentVC.xib */; };
+		D200FF2D1FEA59D20024C73B /* VCTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FEFC1FEA59D20024C73B /* VCTransitioningDelegate.m */; };
+		D200FF2E1FEA59D20024C73B /* InteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF001FEA59D20024C73B /* InteractivePopVC.m */; };
+		D200FF2F1FEA59D20024C73B /* InteractivePushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF021FEA59D20024C73B /* InteractivePushVC.m */; };
+		D200FF301FEA59D20024C73B /* InteractivePushVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FF031FEA59D20024C73B /* InteractivePushVC.xib */; };
+		D200FF311FEA59D20024C73B /* UnInteractivePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF061FEA59D20024C73B /* UnInteractivePopVC.m */; };
+		D200FF321FEA59D20024C73B /* UnInteractivePushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF081FEA59D20024C73B /* UnInteractivePushVC.m */; };
+		D200FF331FEA59D20024C73B /* UnInteractivePushVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D200FF091FEA59D20024C73B /* UnInteractivePushVC.xib */; };
+		D200FF341FEA59D20024C73B /* NavControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF0C1FEA59D20024C73B /* NavControllerDelegate.m */; };
+		D200FF351FEA59D20024C73B /* InteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF101FEA59D20024C73B /* InteractiveTabBarVC.m */; };
+		D200FF361FEA59D20024C73B /* UnInteractiveTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF131FEA59D20024C73B /* UnInteractiveTabBarVC.m */; };
+		D200FF371FEA59D20024C73B /* TabBarVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF161FEA59D20024C73B /* TabBarVCDelegate.m */; };
+		D200FF381FEA59D20024C73B /* CustomTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF191FEA59D20024C73B /* CustomTransitionAnimation.m */; };
+		D200FF391FEA59D20024C73B /* GestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF1C1FEA59D20024C73B /* GestureInteractiveTransition.m */; };
+		D200FF3A1FEA59D20024C73B /* JLDrawerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF1F1FEA59D20024C73B /* JLDrawerTransition.m */; };
+		D200FF3B1FEA59D20024C73B /* JLFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF211FEA59D20024C73B /* JLFlipTransition.m */; };
+		D200FF3C1FEA59D20024C73B /* JLWindTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF231FEA59D20024C73B /* JLWindTransition.m */; };
+		D200FF3F1FEA5A1C0024C73B /* SystemPresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF3E1FEA5A1C0024C73B /* SystemPresentVC.m */; };
+		D200FF421FEA5A2D0024C73B /* SystemDismissVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF411FEA5A2D0024C73B /* SystemDismissVC.m */; };
+		D200FF451FEB40AD0024C73B /* SystemPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF441FEB40AD0024C73B /* SystemPushVC.m */; };
+		D200FF481FEB40BB0024C73B /* SystemPopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF471FEB40BB0024C73B /* SystemPopVC.m */; };
+		D200FF4B1FEB44060024C73B /* SystemTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D200FF4A1FEB44060024C73B /* SystemTabBarVC.m */; };
+		D200FF4F1FEB4C440024C73B /* 总结说明.strings in Resources */ = {isa = PBXBuildFile; fileRef = D200FF4E1FEB4C440024C73B /* 总结说明.strings */; };
 		D25E76731FDE6BC200D23D38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76721FDE6BC200D23D38 /* main.m */; };
 		D25E76761FDE6BC200D23D38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76751FDE6BC200D23D38 /* AppDelegate.m */; };
 		D25E767C1FDE6BC200D23D38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25E767A1FDE6BC200D23D38 /* Main.storyboard */; };
@@ -37,7 +47,6 @@
 		D25E76971FDE6BC200D23D38 /* UIViewControllerTransitioningUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76961FDE6BC200D23D38 /* UIViewControllerTransitioningUITests.m */; };
 		D25E76C71FDFD2E000D23D38 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E76C61FDFD2E000D23D38 /* BaseVC.m */; };
 		D2FE6DAB1FE272A5001DF378 /* 资料参考图.png in Resources */ = {isa = PBXBuildFile; fileRef = D2FE6DAA1FE272A5001DF378 /* 资料参考图.png */; };
-		D2FE6FDC1FE504F500D7B1FC /* CustomTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE6FDB1FE504F500D7B1FC /* CustomTransitionAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,41 +67,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D200FE991FE7A75B0024C73B /* InteractiveDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveDismissVC.h; sourceTree = "<group>"; };
-		D200FE9A1FE7A75B0024C73B /* InteractiveDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveDismissVC.m; sourceTree = "<group>"; };
-		D200FE9B1FE7A75B0024C73B /* InteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractiveDismissVC.xib; sourceTree = "<group>"; };
-		D200FE9C1FE7A75B0024C73B /* InteractivePresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePresentVC.h; sourceTree = "<group>"; };
-		D200FE9D1FE7A75B0024C73B /* InteractivePresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePresentVC.m; sourceTree = "<group>"; };
-		D200FE9E1FE7A75B0024C73B /* InteractivePresentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractivePresentVC.xib; sourceTree = "<group>"; };
-		D200FEA01FE7A75B0024C73B /* UnInteractiveDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveDismissVC.h; sourceTree = "<group>"; };
-		D200FEA11FE7A75B0024C73B /* UnInteractiveDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveDismissVC.m; sourceTree = "<group>"; };
-		D200FEA21FE7A75B0024C73B /* UnInteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractiveDismissVC.xib; sourceTree = "<group>"; };
-		D200FEA31FE7A75B0024C73B /* UnInteractivePresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePresentVC.h; sourceTree = "<group>"; };
-		D200FEA41FE7A75B0024C73B /* UnInteractivePresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePresentVC.m; sourceTree = "<group>"; };
-		D200FEA51FE7A75B0024C73B /* UnInteractivePresentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractivePresentVC.xib; sourceTree = "<group>"; };
-		D200FEA71FE7A75B0024C73B /* VCTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTransitioningDelegate.h; sourceTree = "<group>"; };
-		D200FEA81FE7A75B0024C73B /* VCTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTransitioningDelegate.m; sourceTree = "<group>"; };
-		D200FEAB1FE7A75B0024C73B /* InteractivePopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePopVC.h; sourceTree = "<group>"; };
-		D200FEAC1FE7A75B0024C73B /* InteractivePopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePopVC.m; sourceTree = "<group>"; };
-		D200FEAD1FE7A75B0024C73B /* InteractivePushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePushVC.h; sourceTree = "<group>"; };
-		D200FEAE1FE7A75B0024C73B /* InteractivePushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePushVC.m; sourceTree = "<group>"; };
-		D200FEAF1FE7A75B0024C73B /* InteractivePushVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractivePushVC.xib; sourceTree = "<group>"; };
-		D200FEB11FE7A75B0024C73B /* UnInteractivePopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePopVC.h; sourceTree = "<group>"; };
-		D200FEB21FE7A75B0024C73B /* UnInteractivePopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePopVC.m; sourceTree = "<group>"; };
-		D200FEB31FE7A75B0024C73B /* UnInteractivePushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePushVC.h; sourceTree = "<group>"; };
-		D200FEB41FE7A75B0024C73B /* UnInteractivePushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePushVC.m; sourceTree = "<group>"; };
-		D200FEB51FE7A75B0024C73B /* UnInteractivePushVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractivePushVC.xib; sourceTree = "<group>"; };
-		D200FEB71FE7A75B0024C73B /* NavControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavControllerDelegate.h; sourceTree = "<group>"; };
-		D200FEB81FE7A75B0024C73B /* NavControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavControllerDelegate.m; sourceTree = "<group>"; };
-		D200FEBB1FE7A75B0024C73B /* InteractiveTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTabBarVC.h; sourceTree = "<group>"; };
-		D200FEBC1FE7A75B0024C73B /* InteractiveTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTabBarVC.m; sourceTree = "<group>"; };
-		D200FEBE1FE7A75B0024C73B /* UnInteractiveTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveTabBarVC.h; sourceTree = "<group>"; };
-		D200FEBF1FE7A75B0024C73B /* UnInteractiveTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveTabBarVC.m; sourceTree = "<group>"; };
-		D200FEC11FE7A75B0024C73B /* TabBarVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVCDelegate.h; sourceTree = "<group>"; };
-		D200FEC21FE7A75B0024C73B /* TabBarVCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVCDelegate.m; sourceTree = "<group>"; };
-		D200FED71FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置UIModalPresentationCustom的情况.png"; sourceTree = "<group>"; };
-		D200FEDA1FE89FAD0024C73B /* GestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureInteractiveTransition.h; sourceTree = "<group>"; };
-		D200FEDB1FE89FAD0024C73B /* GestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureInteractiveTransition.m; sourceTree = "<group>"; };
+		D200FEEC1FEA59D20024C73B /* InteractiveDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveDismissVC.h; sourceTree = "<group>"; };
+		D200FEED1FEA59D20024C73B /* InteractiveDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveDismissVC.m; sourceTree = "<group>"; };
+		D200FEEE1FEA59D20024C73B /* InteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractiveDismissVC.xib; sourceTree = "<group>"; };
+		D200FEEF1FEA59D20024C73B /* InteractivePresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePresentVC.h; sourceTree = "<group>"; };
+		D200FEF01FEA59D20024C73B /* InteractivePresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePresentVC.m; sourceTree = "<group>"; };
+		D200FEF11FEA59D20024C73B /* InteractivePresentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractivePresentVC.xib; sourceTree = "<group>"; };
+		D200FEF21FEA59D20024C73B /* 设置UIModalPresentationCustom的情况.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置UIModalPresentationCustom的情况.png"; sourceTree = "<group>"; };
+		D200FEF41FEA59D20024C73B /* UnInteractiveDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveDismissVC.h; sourceTree = "<group>"; };
+		D200FEF51FEA59D20024C73B /* UnInteractiveDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveDismissVC.m; sourceTree = "<group>"; };
+		D200FEF61FEA59D20024C73B /* UnInteractiveDismissVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractiveDismissVC.xib; sourceTree = "<group>"; };
+		D200FEF71FEA59D20024C73B /* UnInteractivePresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePresentVC.h; sourceTree = "<group>"; };
+		D200FEF81FEA59D20024C73B /* UnInteractivePresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePresentVC.m; sourceTree = "<group>"; };
+		D200FEF91FEA59D20024C73B /* UnInteractivePresentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractivePresentVC.xib; sourceTree = "<group>"; };
+		D200FEFB1FEA59D20024C73B /* VCTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTransitioningDelegate.h; sourceTree = "<group>"; };
+		D200FEFC1FEA59D20024C73B /* VCTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTransitioningDelegate.m; sourceTree = "<group>"; };
+		D200FEFF1FEA59D20024C73B /* InteractivePopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePopVC.h; sourceTree = "<group>"; };
+		D200FF001FEA59D20024C73B /* InteractivePopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePopVC.m; sourceTree = "<group>"; };
+		D200FF011FEA59D20024C73B /* InteractivePushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractivePushVC.h; sourceTree = "<group>"; };
+		D200FF021FEA59D20024C73B /* InteractivePushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractivePushVC.m; sourceTree = "<group>"; };
+		D200FF031FEA59D20024C73B /* InteractivePushVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InteractivePushVC.xib; sourceTree = "<group>"; };
+		D200FF051FEA59D20024C73B /* UnInteractivePopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePopVC.h; sourceTree = "<group>"; };
+		D200FF061FEA59D20024C73B /* UnInteractivePopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePopVC.m; sourceTree = "<group>"; };
+		D200FF071FEA59D20024C73B /* UnInteractivePushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractivePushVC.h; sourceTree = "<group>"; };
+		D200FF081FEA59D20024C73B /* UnInteractivePushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractivePushVC.m; sourceTree = "<group>"; };
+		D200FF091FEA59D20024C73B /* UnInteractivePushVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnInteractivePushVC.xib; sourceTree = "<group>"; };
+		D200FF0B1FEA59D20024C73B /* NavControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavControllerDelegate.h; sourceTree = "<group>"; };
+		D200FF0C1FEA59D20024C73B /* NavControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavControllerDelegate.m; sourceTree = "<group>"; };
+		D200FF0F1FEA59D20024C73B /* InteractiveTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTabBarVC.h; sourceTree = "<group>"; };
+		D200FF101FEA59D20024C73B /* InteractiveTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTabBarVC.m; sourceTree = "<group>"; };
+		D200FF121FEA59D20024C73B /* UnInteractiveTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnInteractiveTabBarVC.h; sourceTree = "<group>"; };
+		D200FF131FEA59D20024C73B /* UnInteractiveTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnInteractiveTabBarVC.m; sourceTree = "<group>"; };
+		D200FF151FEA59D20024C73B /* TabBarVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVCDelegate.h; sourceTree = "<group>"; };
+		D200FF161FEA59D20024C73B /* TabBarVCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVCDelegate.m; sourceTree = "<group>"; };
+		D200FF181FEA59D20024C73B /* CustomTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionAnimation.h; sourceTree = "<group>"; };
+		D200FF191FEA59D20024C73B /* CustomTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionAnimation.m; sourceTree = "<group>"; };
+		D200FF1B1FEA59D20024C73B /* GestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureInteractiveTransition.h; sourceTree = "<group>"; };
+		D200FF1C1FEA59D20024C73B /* GestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureInteractiveTransition.m; sourceTree = "<group>"; };
+		D200FF1E1FEA59D20024C73B /* JLDrawerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLDrawerTransition.h; sourceTree = "<group>"; };
+		D200FF1F1FEA59D20024C73B /* JLDrawerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLDrawerTransition.m; sourceTree = "<group>"; };
+		D200FF201FEA59D20024C73B /* JLFlipTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLFlipTransition.h; sourceTree = "<group>"; };
+		D200FF211FEA59D20024C73B /* JLFlipTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLFlipTransition.m; sourceTree = "<group>"; };
+		D200FF221FEA59D20024C73B /* JLWindTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLWindTransition.h; sourceTree = "<group>"; };
+		D200FF231FEA59D20024C73B /* JLWindTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLWindTransition.m; sourceTree = "<group>"; };
+		D200FF3D1FEA5A1C0024C73B /* SystemPresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemPresentVC.h; sourceTree = "<group>"; };
+		D200FF3E1FEA5A1C0024C73B /* SystemPresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemPresentVC.m; sourceTree = "<group>"; };
+		D200FF401FEA5A2D0024C73B /* SystemDismissVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemDismissVC.h; sourceTree = "<group>"; };
+		D200FF411FEA5A2D0024C73B /* SystemDismissVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemDismissVC.m; sourceTree = "<group>"; };
+		D200FF431FEB40AD0024C73B /* SystemPushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemPushVC.h; sourceTree = "<group>"; };
+		D200FF441FEB40AD0024C73B /* SystemPushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemPushVC.m; sourceTree = "<group>"; };
+		D200FF461FEB40BB0024C73B /* SystemPopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemPopVC.h; sourceTree = "<group>"; };
+		D200FF471FEB40BB0024C73B /* SystemPopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemPopVC.m; sourceTree = "<group>"; };
+		D200FF491FEB44060024C73B /* SystemTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemTabBarVC.h; sourceTree = "<group>"; };
+		D200FF4A1FEB44060024C73B /* SystemTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemTabBarVC.m; sourceTree = "<group>"; };
+		D200FF4E1FEB4C440024C73B /* 总结说明.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "总结说明.strings"; sourceTree = "<group>"; };
 		D25E766E1FDE6BC200D23D38 /* UIViewControllerTransitioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewControllerTransitioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25E76721FDE6BC200D23D38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D25E76741FDE6BC200D23D38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,8 +138,6 @@
 		D25E76C51FDFD2E000D23D38 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
 		D25E76C61FDFD2E000D23D38 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
 		D2FE6DAA1FE272A5001DF378 /* 资料参考图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "资料参考图.png"; sourceTree = "<group>"; };
-		D2FE6FDA1FE504F500D7B1FC /* CustomTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionAnimation.h; sourceTree = "<group>"; };
-		D2FE6FDB1FE504F500D7B1FC /* CustomTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,139 +165,192 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D200FE951FE7A75B0024C73B /* Present&Dismiss */ = {
+		D200FEE81FEA59D20024C73B /* 系统自带转场动画 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FED71FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png */,
-				D200FE9F1FE7A75B0024C73B /* 非交互式 */,
-				D200FE961FE7A75B0024C73B /* 交互式 */,
+				D200FF4E1FEB4C440024C73B /* 总结说明.strings */,
+				D200FF3D1FEA5A1C0024C73B /* SystemPresentVC.h */,
+				D200FF3E1FEA5A1C0024C73B /* SystemPresentVC.m */,
+				D200FF401FEA5A2D0024C73B /* SystemDismissVC.h */,
+				D200FF411FEA5A2D0024C73B /* SystemDismissVC.m */,
+				D200FF431FEB40AD0024C73B /* SystemPushVC.h */,
+				D200FF441FEB40AD0024C73B /* SystemPushVC.m */,
+				D200FF461FEB40BB0024C73B /* SystemPopVC.h */,
+				D200FF471FEB40BB0024C73B /* SystemPopVC.m */,
+				D200FF491FEB44060024C73B /* SystemTabBarVC.h */,
+				D200FF4A1FEB44060024C73B /* SystemTabBarVC.m */,
+			);
+			path = "系统自带转场动画";
+			sourceTree = "<group>";
+		};
+		D200FEE91FEA59D20024C73B /* 自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				D200FEEA1FEA59D20024C73B /* Present&Dismiss */,
+				D200FEFD1FEA59D20024C73B /* Push&Pop */,
+				D200FF0D1FEA59D20024C73B /* UITabBarController */,
+				D200FF171FEA59D20024C73B /* 动画部分 */,
+				D200FF1A1FEA59D20024C73B /* 手势部分 */,
+				D200FF1D1FEA59D20024C73B /* 炫酷动画参考 */,
+			);
+			path = "自定义转场动画";
+			sourceTree = "<group>";
+		};
+		D200FEEA1FEA59D20024C73B /* Present&Dismiss */ = {
+			isa = PBXGroup;
+			children = (
+				D200FEF21FEA59D20024C73B /* 设置UIModalPresentationCustom的情况.png */,
+				D200FEEB1FEA59D20024C73B /* 交互式 */,
+				D200FEF31FEA59D20024C73B /* 非交互式 */,
 			);
 			path = "Present&Dismiss";
 			sourceTree = "<group>";
 		};
-		D200FE961FE7A75B0024C73B /* 交互式 */ = {
+		D200FEEB1FEA59D20024C73B /* 交互式 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FE9C1FE7A75B0024C73B /* InteractivePresentVC.h */,
-				D200FE9D1FE7A75B0024C73B /* InteractivePresentVC.m */,
-				D200FE9E1FE7A75B0024C73B /* InteractivePresentVC.xib */,
-				D200FE991FE7A75B0024C73B /* InteractiveDismissVC.h */,
-				D200FE9A1FE7A75B0024C73B /* InteractiveDismissVC.m */,
-				D200FE9B1FE7A75B0024C73B /* InteractiveDismissVC.xib */,
+				D200FEEC1FEA59D20024C73B /* InteractiveDismissVC.h */,
+				D200FEED1FEA59D20024C73B /* InteractiveDismissVC.m */,
+				D200FEEE1FEA59D20024C73B /* InteractiveDismissVC.xib */,
+				D200FEEF1FEA59D20024C73B /* InteractivePresentVC.h */,
+				D200FEF01FEA59D20024C73B /* InteractivePresentVC.m */,
+				D200FEF11FEA59D20024C73B /* InteractivePresentVC.xib */,
 			);
 			path = "交互式";
 			sourceTree = "<group>";
 		};
-		D200FE9F1FE7A75B0024C73B /* 非交互式 */ = {
+		D200FEF31FEA59D20024C73B /* 非交互式 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEA31FE7A75B0024C73B /* UnInteractivePresentVC.h */,
-				D200FEA41FE7A75B0024C73B /* UnInteractivePresentVC.m */,
-				D200FEA51FE7A75B0024C73B /* UnInteractivePresentVC.xib */,
-				D200FEA01FE7A75B0024C73B /* UnInteractiveDismissVC.h */,
-				D200FEA11FE7A75B0024C73B /* UnInteractiveDismissVC.m */,
-				D200FEA21FE7A75B0024C73B /* UnInteractiveDismissVC.xib */,
-				D200FEA61FE7A75B0024C73B /* 解耦：分离代理对象写法 */,
+				D200FEF41FEA59D20024C73B /* UnInteractiveDismissVC.h */,
+				D200FEF51FEA59D20024C73B /* UnInteractiveDismissVC.m */,
+				D200FEF61FEA59D20024C73B /* UnInteractiveDismissVC.xib */,
+				D200FEF71FEA59D20024C73B /* UnInteractivePresentVC.h */,
+				D200FEF81FEA59D20024C73B /* UnInteractivePresentVC.m */,
+				D200FEF91FEA59D20024C73B /* UnInteractivePresentVC.xib */,
+				D200FEFA1FEA59D20024C73B /* 解耦：分离代理对象写法 */,
 			);
 			path = "非交互式";
 			sourceTree = "<group>";
 		};
-		D200FEA61FE7A75B0024C73B /* 解耦：分离代理对象写法 */ = {
+		D200FEFA1FEA59D20024C73B /* 解耦：分离代理对象写法 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEA71FE7A75B0024C73B /* VCTransitioningDelegate.h */,
-				D200FEA81FE7A75B0024C73B /* VCTransitioningDelegate.m */,
+				D200FEFB1FEA59D20024C73B /* VCTransitioningDelegate.h */,
+				D200FEFC1FEA59D20024C73B /* VCTransitioningDelegate.m */,
 			);
 			path = "解耦：分离代理对象写法";
 			sourceTree = "<group>";
 		};
-		D200FEA91FE7A75B0024C73B /* Push&Pop */ = {
+		D200FEFD1FEA59D20024C73B /* Push&Pop */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEB01FE7A75B0024C73B /* 非交互式 */,
-				D200FEAA1FE7A75B0024C73B /* 交互式 */,
+				D200FEFE1FEA59D20024C73B /* 交互式 */,
+				D200FF041FEA59D20024C73B /* 非交互式 */,
 			);
 			path = "Push&Pop";
 			sourceTree = "<group>";
 		};
-		D200FEAA1FE7A75B0024C73B /* 交互式 */ = {
+		D200FEFE1FEA59D20024C73B /* 交互式 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEAB1FE7A75B0024C73B /* InteractivePopVC.h */,
-				D200FEAC1FE7A75B0024C73B /* InteractivePopVC.m */,
-				D200FEAD1FE7A75B0024C73B /* InteractivePushVC.h */,
-				D200FEAE1FE7A75B0024C73B /* InteractivePushVC.m */,
-				D200FEAF1FE7A75B0024C73B /* InteractivePushVC.xib */,
+				D200FEFF1FEA59D20024C73B /* InteractivePopVC.h */,
+				D200FF001FEA59D20024C73B /* InteractivePopVC.m */,
+				D200FF011FEA59D20024C73B /* InteractivePushVC.h */,
+				D200FF021FEA59D20024C73B /* InteractivePushVC.m */,
+				D200FF031FEA59D20024C73B /* InteractivePushVC.xib */,
 			);
 			path = "交互式";
 			sourceTree = "<group>";
 		};
-		D200FEB01FE7A75B0024C73B /* 非交互式 */ = {
+		D200FF041FEA59D20024C73B /* 非交互式 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEB11FE7A75B0024C73B /* UnInteractivePopVC.h */,
-				D200FEB21FE7A75B0024C73B /* UnInteractivePopVC.m */,
-				D200FEB31FE7A75B0024C73B /* UnInteractivePushVC.h */,
-				D200FEB41FE7A75B0024C73B /* UnInteractivePushVC.m */,
-				D200FEB51FE7A75B0024C73B /* UnInteractivePushVC.xib */,
-				D200FEB61FE7A75B0024C73B /* 分离代理对象写法(其他两种方式也可以这样写) */,
+				D200FF051FEA59D20024C73B /* UnInteractivePopVC.h */,
+				D200FF061FEA59D20024C73B /* UnInteractivePopVC.m */,
+				D200FF071FEA59D20024C73B /* UnInteractivePushVC.h */,
+				D200FF081FEA59D20024C73B /* UnInteractivePushVC.m */,
+				D200FF091FEA59D20024C73B /* UnInteractivePushVC.xib */,
+				D200FF0A1FEA59D20024C73B /* 分离代理对象写法(其他两种方式也可以这样写) */,
 			);
 			path = "非交互式";
 			sourceTree = "<group>";
 		};
-		D200FEB61FE7A75B0024C73B /* 分离代理对象写法(其他两种方式也可以这样写) */ = {
+		D200FF0A1FEA59D20024C73B /* 分离代理对象写法(其他两种方式也可以这样写) */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEB71FE7A75B0024C73B /* NavControllerDelegate.h */,
-				D200FEB81FE7A75B0024C73B /* NavControllerDelegate.m */,
+				D200FF0B1FEA59D20024C73B /* NavControllerDelegate.h */,
+				D200FF0C1FEA59D20024C73B /* NavControllerDelegate.m */,
 			);
 			path = "分离代理对象写法(其他两种方式也可以这样写)";
 			sourceTree = "<group>";
 		};
-		D200FEB91FE7A75B0024C73B /* UITabBarController */ = {
+		D200FF0D1FEA59D20024C73B /* UITabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEBD1FE7A75B0024C73B /* 非交互式 */,
-				D200FEBA1FE7A75B0024C73B /* 交互式 */,
+				D200FF0E1FEA59D20024C73B /* 交互式 */,
+				D200FF111FEA59D20024C73B /* 非交互式 */,
 			);
 			path = UITabBarController;
 			sourceTree = "<group>";
 		};
-		D200FEBA1FE7A75B0024C73B /* 交互式 */ = {
+		D200FF0E1FEA59D20024C73B /* 交互式 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEBB1FE7A75B0024C73B /* InteractiveTabBarVC.h */,
-				D200FEBC1FE7A75B0024C73B /* InteractiveTabBarVC.m */,
+				D200FF0F1FEA59D20024C73B /* InteractiveTabBarVC.h */,
+				D200FF101FEA59D20024C73B /* InteractiveTabBarVC.m */,
 			);
 			path = "交互式";
 			sourceTree = "<group>";
 		};
-		D200FEBD1FE7A75B0024C73B /* 非交互式 */ = {
+		D200FF111FEA59D20024C73B /* 非交互式 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEBE1FE7A75B0024C73B /* UnInteractiveTabBarVC.h */,
-				D200FEBF1FE7A75B0024C73B /* UnInteractiveTabBarVC.m */,
-				D200FEC01FE7A75B0024C73B /* 解耦：分离代理对象写法 */,
+				D200FF121FEA59D20024C73B /* UnInteractiveTabBarVC.h */,
+				D200FF131FEA59D20024C73B /* UnInteractiveTabBarVC.m */,
+				D200FF141FEA59D20024C73B /* 解耦：分离代理对象写法 */,
 			);
 			path = "非交互式";
 			sourceTree = "<group>";
 		};
-		D200FEC01FE7A75B0024C73B /* 解耦：分离代理对象写法 */ = {
+		D200FF141FEA59D20024C73B /* 解耦：分离代理对象写法 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEC11FE7A75B0024C73B /* TabBarVCDelegate.h */,
-				D200FEC21FE7A75B0024C73B /* TabBarVCDelegate.m */,
+				D200FF151FEA59D20024C73B /* TabBarVCDelegate.h */,
+				D200FF161FEA59D20024C73B /* TabBarVCDelegate.m */,
 			);
 			path = "解耦：分离代理对象写法";
 			sourceTree = "<group>";
 		};
-		D200FED91FE89FAD0024C73B /* 手势部分 */ = {
+		D200FF171FEA59D20024C73B /* 动画部分 */ = {
 			isa = PBXGroup;
 			children = (
-				D200FEDA1FE89FAD0024C73B /* GestureInteractiveTransition.h */,
-				D200FEDB1FE89FAD0024C73B /* GestureInteractiveTransition.m */,
+				D200FF181FEA59D20024C73B /* CustomTransitionAnimation.h */,
+				D200FF191FEA59D20024C73B /* CustomTransitionAnimation.m */,
+			);
+			path = "动画部分";
+			sourceTree = "<group>";
+		};
+		D200FF1A1FEA59D20024C73B /* 手势部分 */ = {
+			isa = PBXGroup;
+			children = (
+				D200FF1B1FEA59D20024C73B /* GestureInteractiveTransition.h */,
+				D200FF1C1FEA59D20024C73B /* GestureInteractiveTransition.m */,
 			);
 			path = "手势部分";
+			sourceTree = "<group>";
+		};
+		D200FF1D1FEA59D20024C73B /* 炫酷动画参考 */ = {
+			isa = PBXGroup;
+			children = (
+				D200FF1E1FEA59D20024C73B /* JLDrawerTransition.h */,
+				D200FF1F1FEA59D20024C73B /* JLDrawerTransition.m */,
+				D200FF201FEA59D20024C73B /* JLFlipTransition.h */,
+				D200FF211FEA59D20024C73B /* JLFlipTransition.m */,
+				D200FF221FEA59D20024C73B /* JLWindTransition.h */,
+				D200FF231FEA59D20024C73B /* JLWindTransition.m */,
+			);
+			path = "炫酷动画参考";
 			sourceTree = "<group>";
 		};
 		D25E76651FDE6BC200D23D38 = {
@@ -301,11 +380,8 @@
 				D25E767A1FDE6BC200D23D38 /* Main.storyboard */,
 				D25E76C51FDFD2E000D23D38 /* BaseVC.h */,
 				D25E76C61FDFD2E000D23D38 /* BaseVC.m */,
-				D200FED91FE89FAD0024C73B /* 手势部分 */,
-				D2FE6FD91FE504F500D7B1FC /* 动画部分 */,
-				D200FE951FE7A75B0024C73B /* Present&Dismiss */,
-				D200FEA91FE7A75B0024C73B /* Push&Pop */,
-				D200FEB91FE7A75B0024C73B /* UITabBarController */,
+				D200FEE91FEA59D20024C73B /* 自定义转场动画 */,
+				D200FEE81FEA59D20024C73B /* 系统自带转场动画 */,
 				D25E76711FDE6BC200D23D38 /* Supporting Files */,
 			);
 			path = UIViewControllerTransitioning;
@@ -340,15 +416,6 @@
 				D25E76981FDE6BC200D23D38 /* Info.plist */,
 			);
 			path = UIViewControllerTransitioningUITests;
-			sourceTree = "<group>";
-		};
-		D2FE6FD91FE504F500D7B1FC /* 动画部分 */ = {
-			isa = PBXGroup;
-			children = (
-				D2FE6FDA1FE504F500D7B1FC /* CustomTransitionAnimation.h */,
-				D2FE6FDB1FE504F500D7B1FC /* CustomTransitionAnimation.m */,
-			);
-			path = "动画部分";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,17 +524,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D200FF2C1FEA59D20024C73B /* UnInteractivePresentVC.xib in Resources */,
 				D2FE6DAB1FE272A5001DF378 /* 资料参考图.png in Resources */,
+				D200FF331FEA59D20024C73B /* UnInteractivePushVC.xib in Resources */,
+				D200FF2A1FEA59D20024C73B /* UnInteractiveDismissVC.xib in Resources */,
+				D200FF301FEA59D20024C73B /* InteractivePushVC.xib in Resources */,
+				D200FF281FEA59D20024C73B /* 设置UIModalPresentationCustom的情况.png in Resources */,
 				D25E76811FDE6BC200D23D38 /* LaunchScreen.storyboard in Resources */,
-				D200FEC51FE7A75B0024C73B /* InteractiveDismissVC.xib in Resources */,
-				D200FEC91FE7A75B0024C73B /* UnInteractiveDismissVC.xib in Resources */,
-				D200FED21FE7A75B0024C73B /* UnInteractivePushVC.xib in Resources */,
+				D200FF251FEA59D20024C73B /* InteractiveDismissVC.xib in Resources */,
+				D200FF4F1FEB4C440024C73B /* 总结说明.strings in Resources */,
 				D25E767E1FDE6BC200D23D38 /* Assets.xcassets in Resources */,
-				D200FECF1FE7A75B0024C73B /* InteractivePushVC.xib in Resources */,
 				D25E767C1FDE6BC200D23D38 /* Main.storyboard in Resources */,
-				D200FECB1FE7A75B0024C73B /* UnInteractivePresentVC.xib in Resources */,
-				D200FEC71FE7A75B0024C73B /* InteractivePresentVC.xib in Resources */,
-				D200FED81FE7B8FE0024C73B /* 设置UIModalPresentationCustom的情况.png in Resources */,
+				D200FF271FEA59D20024C73B /* InteractivePresentVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,24 +560,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D200FF3C1FEA59D20024C73B /* JLWindTransition.m in Sources */,
+				D200FF481FEB40BB0024C73B /* SystemPopVC.m in Sources */,
+				D200FF341FEA59D20024C73B /* NavControllerDelegate.m in Sources */,
+				D200FF2E1FEA59D20024C73B /* InteractivePopVC.m in Sources */,
+				D200FF241FEA59D20024C73B /* InteractiveDismissVC.m in Sources */,
+				D200FF391FEA59D20024C73B /* GestureInteractiveTransition.m in Sources */,
+				D200FF321FEA59D20024C73B /* UnInteractivePushVC.m in Sources */,
+				D200FF3B1FEA59D20024C73B /* JLFlipTransition.m in Sources */,
+				D200FF2D1FEA59D20024C73B /* VCTransitioningDelegate.m in Sources */,
+				D200FF4B1FEB44060024C73B /* SystemTabBarVC.m in Sources */,
+				D200FF2F1FEA59D20024C73B /* InteractivePushVC.m in Sources */,
+				D200FF2B1FEA59D20024C73B /* UnInteractivePresentVC.m in Sources */,
+				D200FF311FEA59D20024C73B /* UnInteractivePopVC.m in Sources */,
+				D200FF361FEA59D20024C73B /* UnInteractiveTabBarVC.m in Sources */,
 				D25E76C71FDFD2E000D23D38 /* BaseVC.m in Sources */,
-				D200FECE1FE7A75B0024C73B /* InteractivePushVC.m in Sources */,
-				D200FEC81FE7A75B0024C73B /* UnInteractiveDismissVC.m in Sources */,
-				D200FED41FE7A75B0024C73B /* InteractiveTabBarVC.m in Sources */,
-				D200FECD1FE7A75B0024C73B /* InteractivePopVC.m in Sources */,
+				D200FF261FEA59D20024C73B /* InteractivePresentVC.m in Sources */,
+				D200FF421FEA5A2D0024C73B /* SystemDismissVC.m in Sources */,
 				D25E76761FDE6BC200D23D38 /* AppDelegate.m in Sources */,
-				D200FED01FE7A75B0024C73B /* UnInteractivePopVC.m in Sources */,
+				D200FF3F1FEA5A1C0024C73B /* SystemPresentVC.m in Sources */,
 				D25E76731FDE6BC200D23D38 /* main.m in Sources */,
-				D200FED11FE7A75B0024C73B /* UnInteractivePushVC.m in Sources */,
-				D200FED31FE7A75B0024C73B /* NavControllerDelegate.m in Sources */,
-				D200FEC41FE7A75B0024C73B /* InteractiveDismissVC.m in Sources */,
-				D200FEC61FE7A75B0024C73B /* InteractivePresentVC.m in Sources */,
-				D200FED61FE7A75B0024C73B /* TabBarVCDelegate.m in Sources */,
-				D2FE6FDC1FE504F500D7B1FC /* CustomTransitionAnimation.m in Sources */,
-				D200FEDC1FE89FAD0024C73B /* GestureInteractiveTransition.m in Sources */,
-				D200FECA1FE7A75B0024C73B /* UnInteractivePresentVC.m in Sources */,
-				D200FECC1FE7A75B0024C73B /* VCTransitioningDelegate.m in Sources */,
-				D200FED51FE7A75B0024C73B /* UnInteractiveTabBarVC.m in Sources */,
+				D200FF371FEA59D20024C73B /* TabBarVCDelegate.m in Sources */,
+				D200FF291FEA59D20024C73B /* UnInteractiveDismissVC.m in Sources */,
+				D200FF351FEA59D20024C73B /* InteractiveTabBarVC.m in Sources */,
+				D200FF381FEA59D20024C73B /* CustomTransitionAnimation.m in Sources */,
+				D200FF3A1FEA59D20024C73B /* JLDrawerTransition.m in Sources */,
+				D200FF451FEB40AD0024C73B /* SystemPushVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
