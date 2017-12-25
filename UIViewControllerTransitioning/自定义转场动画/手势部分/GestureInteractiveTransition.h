@@ -53,7 +53,7 @@ typedef void(^GestureConifg)();
 @property (nonatomic,copy) GestureConifg gesPresentConfig;
 @property (nonatomic,copy) GestureConifg gesPushConfig;
 
-@property (nonatomic, assign) BOOL interacting;//当前是否在交互状态，主要为了保证一次交互的过程中不会再出发第二次交互，直到本次交互完毕
+@property (nonatomic, assign) BOOL interacting;//当前是否在交互状态
 
 
 -(instancetype)initWithTransitionType:(TransitionType)type GesDirection:(GesDirection)direction addGesVC:(UIViewController *)vc;

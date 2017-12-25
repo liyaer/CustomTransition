@@ -17,8 +17,7 @@ typedef enum : NSUInteger
     kPush,
     kPop,
     ktabBar,
-}
-transitionType;
+}transitionType;
 
 
 @interface CustomTransitionAnimation : NSObject<UIViewControllerAnimatedTransitioning>

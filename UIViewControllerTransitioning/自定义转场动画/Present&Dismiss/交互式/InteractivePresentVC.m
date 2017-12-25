@@ -104,9 +104,10 @@
     UIModalPresentationCustom 模式：转场时 containerView 并不担任 presentingView 的父视图，后者由 UIKit 另行管理。在 presentation 后，fromView(presentingView) 未被移出视图结构，在 dismissal 中，注意不要像其他转场中那样将 toView(presentingView) 加入 containerView 中，否则本来可见的 presentingView 将会被移除出自身所处的视图结构消失不见。如果你在使用 Custom 模式时没有注意到这点，就很容易掉进这个陷阱而很难察觉问题所在，这个问题曾困扰了我一天。
  
     个人总结：
-        1，对于present&dismissz转场方式而言，如果动画结果需要同时展示fromVC和toVC，那么需要
+        1，对于present&dismiss转场方式而言，如果动画结果需要同时展示fromVC和toVC，那么需要
         设置vc.modalPresentationStyle = UIModalPresentationCustom;同时在动画部分
-        不能设置[[transitionContext containerView] addSubview:toVC.view];
+        dimiss转场动画时不能设置[[transitionContext containerView]
+        addSubview:toVC.view];
         2，无论那种转场方式，如果是直接用vc.view做动画，那么动画结束后无需写任何关于vc.view移除的代码，交给系统自动管理；如果使用截图做动画，需要手动管理截图，动画结束后从父试图移除截图。
  */
 
